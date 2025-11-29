@@ -13,8 +13,8 @@
 - `ACME - GLOBAL - BLOCK - DeviceCodeAuthFlow`
 - `ACME - GLOBAL - BLOCK - Authentication Transfer`
 - `ACME - GLOBAL - BLOCK - UnsupportedDevicePlatforms`
-- `ACME - GLOBAL - BLOCK - Countries-NotAllowed`(Uses ACME-TrustedCountries)
-- `ACME - GLOBAL - BLOCK - Countries-NotAllowed-NoExclusions`(Uses ACME-BlockedCountries)
+- `ACME - GLOBAL - BLOCK - Countries-NotAllowed`(Uses ACME-TrustedCountries) Remember to create the Trusted Country list for your use case
+- `ACME - GLOBAL - BLOCK - Countries-NotAllowed-NoExclusions`(Uses ACME-BlockedCountries) Remember to create the BlockedCountry for full list of Countries to block no matter exclusions
 - `ACME - GLOBAL - BLOCK - ServiceAccounts`
 - `ACME - GLOBAL - BLOCK - LegacyAuthentication`
 - `ACME - GLOBAL - BLOCK - RegisterSecurityInfoRequirements - ExludeTrustedLocation` (This policy blocks registration from anywhere but a trusted location)
