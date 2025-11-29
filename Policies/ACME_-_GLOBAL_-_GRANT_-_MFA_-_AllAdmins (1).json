@@ -1,0 +1,106 @@
+{
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#identity/conditionalAccess/policies/$entity",
+  "templateId": null,
+  "displayName": "ACME - GLOBAL - GRANT - MFA - AllAdmins",
+  "state": "enabled",
+  "deletedDateTime": null,
+  "partialEnablementStrategy": null,
+  "sessionControls": null,
+  "conditions": {
+    "userRiskLevels": [],
+    "signInRiskLevels": [],
+    "clientAppTypes": [
+      "all"
+    ],
+    "times": null,
+    "deviceStates": null,
+    "devices": null,
+    "clientApplications": null,
+    "applications": {
+      "includeApplications": [
+        "All"
+      ],
+      "excludeApplications": [
+        "372140e0-b3b7-4226-8ef9-d57986796201"
+      ],
+      "includeUserActions": [],
+      "includeAuthenticationContextClassReferences": [],
+      "applicationFilter": null
+    },
+    "users": {
+      "includeUsers": [],
+      "excludeUsers": [
+        "eaf72a07-8d1f-4324-b8dd-35d906b86d6d"
+      ],
+      "includeGroups": [],
+      "excludeGroups": [
+        "895b3e04-1f55-413d-a3f8-5a23678310ae"
+      ],
+      "includeRoles": [
+        "c4e39bd9-1100-46d3-8c65-fb160da0071f",
+        "b0f54661-2d74-4c50-afa3-1ec803f12efe",
+        "b1be1c3e-b65d-4f19-8427-f6fa0d97feb9",
+        "29232cdf-9323-42fd-ade2-1d097af3e4de",
+        "62e90394-69f5-4237-9190-012177145e10",
+        "729827e3-9c14-49f7-bb1b-9608f156bbb8",
+        "194ae4cb-b126-40b2-bd5b-6091b380977d",
+        "f28a1f50-f6e7-4571-818b-6a12f2af6b6c",
+        "fe930be7-5e62-47db-91af-98c3a49a38b1",
+        "9b895d92-2cd3-44c7-9d02-a6ac2d5ea5c3",
+        "158c047a-c907-4556-b7ef-446551a6b5f7",
+        "966707d0-3269-4727-9be2-8c3a10f19b9d",
+        "e8611ab8-c189-46e8-94e1-60213ab1f814",
+        "7be44c8a-adaf-4e2a-84d6-ab2649e08a13"
+      ],
+      "excludeRoles": [],
+      "includeGuestsOrExternalUsers": null,
+      "excludeGuestsOrExternalUsers": {
+        "guestOrExternalUserTypes": "serviceProvider",
+        "externalTenants": {
+          "@odata.type": "#microsoft.graph.conditionalAccessEnumeratedExternalTenants",
+          "membershipKind": "enumerated",
+          "members": [
+            "1b2f14e2-91f9-4876-9f59-3cb09b4ec310"
+          ]
+        }
+      }
+    },
+    "platforms": {
+      "includePlatforms": [
+        "all"
+      ],
+      "excludePlatforms": []
+    },
+    "locations": {
+      "includeLocations": [
+        "All"
+      ],
+      "excludeLocations": []
+    }
+  },
+  "grantControls": {
+    "operator": "OR",
+    "builtInControls": [],
+    "customAuthenticationFactors": [],
+    "termsOfUse": [],
+    "authenticationStrength@odata.context": "https://graph.microsoft.com/beta/$metadata#identity/conditionalAccess/policies('5984f826-7446-4578-ad5e-9222f9bf88e9')/grantControls/authenticationStrength/$entity",
+    "authenticationStrength": {
+      "id": "5b2425d3-82b4-4c1f-a64d-f36030f601fd",
+      "createdDateTime": "2025-01-21T14:45:00.8323453Z",
+      "modifiedDateTime": "2025-10-30T10:57:59.6225825Z",
+      "displayName": "Modern MFA + TAP",
+      "description": "",
+      "policyType": "custom",
+      "requirementsSatisfied": "mfa",
+      "allowedCombinations": [
+        "windowsHelloForBusiness",
+        "fido2",
+        "x509CertificateMultiFactor",
+        "temporaryAccessPassOneTime",
+        "temporaryAccessPassMultiUse"
+      ],
+      "combinationConfigurations@odata.context": "https://graph.microsoft.com/beta/$metadata#identity/conditionalAccess/policies('5984f826-7446-4578-ad5e-9222f9bf88e9')/grantControls/authenticationStrength/combinationConfigurations",
+      "combinationConfigurations": []
+    }
+  }
+}

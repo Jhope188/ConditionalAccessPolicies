@@ -1,0 +1,75 @@
+{
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#identity/conditionalAccess/policies/$entity",
+  "templateId": null,
+  "displayName": "ACME- ZTCA - GLOBAL – BLOCK – Admin Portal",
+  "state": "enabledForReportingButNotEnforced",
+  "deletedDateTime": null,
+  "partialEnablementStrategy": null,
+  "sessionControls": null,
+  "conditions": {
+    "userRiskLevels": [],
+    "signInRiskLevels": [],
+    "clientAppTypes": [
+      "all"
+    ],
+    "platforms": null,
+    "locations": null,
+    "times": null,
+    "deviceStates": null,
+    "devices": null,
+    "clientApplications": null,
+    "applications": {
+      "includeApplications": [
+        "6ccae737-81cb-43a2-a795-41f1fbbc01db",
+        "fd642066-7bfc-4b65-9463-6a08841c12f0",
+        "MicrosoftAdminPortals",
+        "797f4846-ba00-4fd7-ba43-dac1f8f63013"
+      ],
+      "excludeApplications": [
+        "1b912ec3-a9dd-4c4d-a53e-76aa7adb28d7",
+        "0000000c-0000-0000-c000-000000000000",
+        "8c59ead7-d703-4a27-9e55-c96a0054c8d2",
+        "00000002-0000-0000-c000-000000000000"
+      ],
+      "includeUserActions": [],
+      "includeAuthenticationContextClassReferences": [],
+      "applicationFilter": null
+    },
+    "users": {
+      "includeUsers": [
+        "All"
+      ],
+      "excludeUsers": [],
+      "includeGroups": [],
+      "excludeGroups": [
+        "895b3e04-1f55-413d-a3f8-5a23678310ae",
+        "4815e4bf-84a2-45e5-8f36-8ceb030cd25a"
+      ],
+      "includeRoles": [],
+      "excludeRoles": [],
+      "includeGuestsOrExternalUsers": null,
+      "excludeGuestsOrExternalUsers": {
+        "guestOrExternalUserTypes": "serviceProvider",
+        "externalTenants": {
+          "@odata.type": "#microsoft.graph.conditionalAccessEnumeratedExternalTenants",
+          "membershipKind": "enumerated",
+          "members": [
+            "d747311f-f098-4814-8432-ed58c58d2a9b",
+            "128cb27b-bf37-4203-80d4-fe87d08aca57",
+            "1b2f14e2-91f9-4876-9f59-3cb09b4ec310"
+          ]
+        }
+      }
+    }
+  },
+  "grantControls": {
+    "operator": "OR",
+    "builtInControls": [
+      "block"
+    ],
+    "customAuthenticationFactors": [],
+    "termsOfUse": [],
+    "authenticationStrength@odata.context": "https://graph.microsoft.com/beta/$metadata#identity/conditionalAccess/policies('ece82019-8397-4375-98ac-6bdc86df96c4')/grantControls/authenticationStrength/$entity",
+    "authenticationStrength": null
+  }
+}
