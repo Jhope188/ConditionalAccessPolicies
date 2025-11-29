@@ -44,8 +44,7 @@
           "@odata.type": "#microsoft.graph.conditionalAccessEnumeratedExternalTenants",
           "membershipKind": "enumerated",
           "members": [
-            "128cb27b-bf37-4203-80d4-fe87d08aca57",
-            "1b2f14e2-91f9-4876-9f59-3cb09b4ec310"
+           
           ]
         }
       }
