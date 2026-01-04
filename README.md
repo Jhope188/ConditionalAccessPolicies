@@ -1,6 +1,6 @@
 # ConditionalAccessPolicies
 Defense in Depth CA Policies
-<https://youtu.be/RA4BYQjLAAU?si=pSz4zeTOGYJf3iP3>
+- <https://youtu.be/RA4BYQjLAAU?si=pSz4zeTOGYJf3iP3>
 
 ## Conditional Access (ACME) Policy Naming Documentation
 
