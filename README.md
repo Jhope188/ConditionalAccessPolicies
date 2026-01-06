@@ -491,11 +491,15 @@ All names follow the `CA-[Scope/Target]-[Descriptor]` structure.
 - **Dynamic Membership Rule (KQL):**
   
 ```KUSTO
-//licensed user
+//licensed user P1
 (user.assignedPlans -any (assignedPlan.servicePlanId -eq "41781fb2-bc02-4b7c-bd55-b576c07bb09d" and assignedPlan.capabilityStatus -eq "Enabled"))
 
-//licensed user synced from on prem
+//licensed user P1 synced from on prem
 (user.assignedPlans -any (assignedPlan.servicePlanId -eq "41781fb2-bc02-4b7c-bd55-b576c07bb09d" and assignedPlan.capabilityStatus -eq "Enabled"))-and (user.dirSyncEnabled -eq true)
+
+//P2 Licensed User
+(user.assignedPlans -any (assignedPlan.servicePlanId -eq "eec0eb4f-6444-4f95-aba0-50c24d67f998" -and assignedPlan.capabilityStatus -eq "Enabled")
+
 
  ```
 
