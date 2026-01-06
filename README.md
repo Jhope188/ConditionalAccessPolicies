@@ -57,7 +57,7 @@ ACME - [Scope] - [Control Type] - [Target] - [Descriptor/Notes]
 - Used for **exceptions, exclusions, or extra detail**.
 - Always use `Exclude-` when naming a policy with explicit exclusions.
 - **Examples**:  
-  - `Exclude-TrustedNewCharterSyncIPs`
+  - `Exclude-TrustedEntraSyncIPs`
   - `Exclude-AVD-ExternalUsers`
   - `NonTrustedLocations`
 
@@ -598,6 +598,23 @@ kusto
 - **Membership Rule Example:**  
   ```azuread
   (device.deviceModel -contains "Cloud PC")
+
+
+ ### ACME-AVD-Host-Dynamic
+
+- **Group Name:** `ACME-AVD-Host-Dynamic`
+- **Scope:** Internal Operational Group (`ACME`)
+- **Technology/Service:** Azure Virtual Desktop (AVD – RDSH / Windows 10 & 11 Multi-session)
+- **Target:** Devices
+- **Descriptor:** Dynamic
+- **Purpose:** Dynamic membership group that automatically includes all Azure Virtual Desktop RDSH session host devices (Windows 10/11 multi-session) registered in Microsoft Entra ID.
+- **Usage Example:**  
+  Used for targeting Conditional Access device exclusions, Intune compliance policies, Defender configuration, monitoring, or security controls specific to Azure Virtual Desktop session hosts.
+- **Membership Rule Example:**  
+  ```azuread
+  (device.deviceOSType -eq "Windows") and (device.operatingSystemSKU -eq "ServerRdsh")
+  ```
+ 
 
 ### ACME-DUO-EAM-Users-Dynamic
 
