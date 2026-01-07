@@ -2,8 +2,8 @@
 Defense in Depth CA Policies
 - <https://youtu.be/RA4BYQjLAAU?si=pSz4zeTOGYJf3iP3>
 
-##Conditional Access Baseline 
-
+## Conditional Access Baseline 
+![CAPolicy Baseline](https://github.com/Jhope188/ConditionalAccessPolicies/blob/main/CA.png)
 
 ## Conditional Access (ACME) Policy Naming Documentation
 
