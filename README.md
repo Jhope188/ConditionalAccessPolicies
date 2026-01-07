@@ -12,7 +12,7 @@ Defense in Depth CA Policies
 * <https://www.vansurksum.com/2025/10/12/configuring-conditional-access-for-guest-users-allowing-only-office-365-and-essential-apps/>
 * <https://www.vansurksum.com/2020/06/26/limit-access-to-outlook-web-access-and-sharepoint-online-and-onedrive-using-conditional-access-app-enforced-restrictions/>
 * <https://danielchronlund.com/2020/11/09/dctoolbox-powershell-module-for-microsoft-365-security-conditional-access-automation-and-more/>
-
+* <https://conditionalaccess.uk/some-policies-i-use-in-conditional-access/>
 
 ACME - [Scope] - [Control Type] - [Target] - [Descriptor/Notes]
 
