@@ -428,7 +428,7 @@ All names follow the `CA-[Scope/Target]-[Descriptor]` structure.
 
 - **Group Name:** `CA-GlobalExclusions`
 - **Scope:** Conditional Access
-- **Target:** Global (All Users and Devices)
+- **Target:** Global  (Users)
 - **Purpose:** Master exclusion group used across all CA policies for emergency, break-glass, or trusted administrative accounts.
 - **Usage Example:** Added as an exclusion to every major CA policy to prevent lockouts.
 - **Membership Type:** Assigned (manually managed, tightly controlled)
