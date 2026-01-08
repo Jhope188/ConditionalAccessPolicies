@@ -33,7 +33,7 @@ It operationalizes Conditional Access by defining standards once and enforcing t
 > - CA has 195 policy limit
 > - Unlike Firewalls all policies apply at evaluation and dont have a priority ACL like an Azure NSG where a lower policy rule would apply before another
 
-
+![Inforcer and the Modern SecureCloud](https://github.com/Jhope188/ConditionalAccessPolicies/blob/main/Images/Inforcer.png)
 ## Links from MVP's
 **Helpful Policy Links**
 - <https://github.com/kennethvs/cabaseline202510/tree/main>
