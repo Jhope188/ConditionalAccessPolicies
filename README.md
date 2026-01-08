@@ -38,7 +38,7 @@ It operationalizes Conditional Access by defining standards once and enforcing t
 > - Unlike Firewalls all policies apply at evaluation and dont have a priority ACL like an Azure NSG where a lower policy rule would apply before another
 > - CA requires a P1 license for basic functions, P2 for Identity Protection features, Protecting Service Principals require Workload ID Premium license
 
-![Inforcer and the Modern SecureCloud](https://github.com/Jhope188/ConditionalAccessPolicies/blob/main/Images/Inforcer.png)
+
 ## Links from MVP's
 **Helpful Policy Links**
 - <https://github.com/kennethvs/cabaseline202510/tree/main>
