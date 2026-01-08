@@ -1,9 +1,11 @@
 # What Is Conditional Access
 
-**The Microsoft Explanation** 
+
 ![Microsoft Conditional Access](https://github.com/Jhope188/ConditionalAccessPolicies/blob/main/Images/conditional-access-central-policy-engine-zero-trust.png)
-<https://learn.microsoft.com/en-us/entra/identity/conditional-access/overview>
-<https://learn.microsoft.com/en-us/entra/identity/conditional-access/plan-conditional-access>
+- <https://learn.microsoft.com/en-us/entra/identity/conditional-access/overview>
+- <https://learn.microsoft.com/en-us/entra/identity/conditional-access/plan-conditional-access>
+
+**The Microsoft Explanation** 
 
 Conditional Access is an Entra ID Zero trust policy engine that evaluates token issuance and enforces controls based on:
 
