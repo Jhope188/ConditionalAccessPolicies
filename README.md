@@ -24,7 +24,7 @@ Just like a firewall:
 - It evaluates every connection attempt
 - Rules are context-aware, not static
 
-** Im currently expanding this to include Inforcer **
+**Im currently expanding this to include Inforcer**
 
 Inforcer is the policy engine—GPO v2 for the cloud era.
 It operationalizes Conditional Access by defining standards once and enforcing them consistently at scale across multiple tenants, turning security intent into repeatable, governable outcomes
