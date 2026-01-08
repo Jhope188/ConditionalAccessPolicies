@@ -29,7 +29,7 @@ Just like a firewall:
 Inforcer is the policy engine—GPO v2 for the cloud era.
 It operationalizes Conditional Access by defining standards once and enforcing them consistently at scale across multiple tenants, turning security intent into repeatable, governable outcomes
 
->** 2 Important Differences to call out **
+> **2 Important Differences to call out**
 > - CA has 195 policy limit
 > - Unlike Firewalls all policies apply at evaluation and dont have a priority ACL like an Azure NSG where a lower policy rule would apply before another
 
