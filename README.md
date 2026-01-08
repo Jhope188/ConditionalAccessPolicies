@@ -4,6 +4,8 @@
 ![Microsoft Conditional Access](https://github.com/Jhope188/ConditionalAccessPolicies/blob/main/Images/conditional-access-central-policy-engine-zero-trust.png)
 - <https://learn.microsoft.com/en-us/entra/identity/conditional-access/overview>
 - <https://learn.microsoft.com/en-us/entra/identity/conditional-access/plan-conditional-access>
+- <https://learn.microsoft.com/en-us/entra/identity/conditional-access/workload-identity>
+- <https://learn.microsoft.com/en-us/entra/workload-id/workload-identities-faqs>
 
 **The Microsoft Explanation** 
 
@@ -31,9 +33,10 @@ Just like a firewall:
 Inforcer is the policy engine—GPO v2 for the cloud era.
 It operationalizes Conditional Access by defining standards once and enforcing them consistently at scale across multiple tenants, turning security intent into repeatable, governable outcomes
 
-> **2 Important Differences to call out**
+> **Important CA Differences and notes to call out**
 > - CA has 195 policy limit
 > - Unlike Firewalls all policies apply at evaluation and dont have a priority ACL like an Azure NSG where a lower policy rule would apply before another
+> - CA requires a P1 license for basic functions, P2 for Identity Protection features, Protecting Service Principals require Workload ID Premium license
 
 ![Inforcer and the Modern SecureCloud](https://github.com/Jhope188/ConditionalAccessPolicies/blob/main/Images/Inforcer.png)
 ## Links from MVP's
