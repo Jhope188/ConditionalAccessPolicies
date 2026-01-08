@@ -1,7 +1,7 @@
 # What Is Conditional Access
 
 **The Microsoft Explanation** 
-
+![Microsoft Conditional Access](https://github.com/Jhope188/ConditionalAccessPolicies/blob/main/Images/conditional-access-central-policy-engine-zero-trust.png)
 <https://learn.microsoft.com/en-us/entra/identity/conditional-access/overview>
 <https://learn.microsoft.com/en-us/entra/identity/conditional-access/plan-conditional-access>
 
