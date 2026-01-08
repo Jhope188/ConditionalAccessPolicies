@@ -18,7 +18,7 @@ It runs at sign-in time and determines whether a token is issued, restricted, or
 
 **The Jon Hope Explanation** 
 
-`Conditional Access` is the cloud identity and workload firewall.
+`Conditional Access` is the modern day cloud identity and workload firewall.
 In the modern cloud, `identity` is the new server—it’s the control plane every access request must pass through.
 
 Just like a firewall:
