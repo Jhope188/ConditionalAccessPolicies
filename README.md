@@ -36,16 +36,16 @@ It operationalizes Conditional Access by defining standards once and enforcing t
 
 ## Links from MVP's
 **Helpful Policy Links**
-* <https://github.com/kennethvs/cabaseline202510/tree/main>
-* <https://www.vansurksum.com/2025/10/12/configuring-conditional-access-for-guest-users-allowing-only-office-365-and-essential-apps/>
-* <https://www.vansurksum.com/2020/06/26/limit-access-to-outlook-web-access-and-sharepoint-online-and-onedrive-using-conditional-access-app-enforced-restrictions/>
-* <https://danielchronlund.com/2020/11/09/dctoolbox-powershell-module-for-microsoft-365-security-conditional-access-automation-and-more/>
-* <https://conditionalaccess.uk/some-policies-i-use-in-conditional-access/>
+- <https://github.com/kennethvs/cabaseline202510/tree/main>
+- <https://www.vansurksum.com/2025/10/12/configuring-conditional-access-for-guest-users-allowing-only-office-365-and-essential-apps/>
+- <https://www.vansurksum.com/2020/06/26/limit-access-to-outlook-web-access-and-sharepoint-online-and-onedrive-using-conditional-access-app-enforced-restrictions/>
+- <https://danielchronlund.com/2020/11/09/dctoolbox-powershell-module-for-microsoft-365-security-conditional-access-automation-and-more/>
+- <https://conditionalaccess.uk/some-policies-i-use-in-conditional-access/>
 
 ** Blog Post from Me **
-<https://medium.com/@jhope188/inforcer-series-conditional-access-and-configuration-restore-bc291a4ab814>
-<https://medium.com/@jhope188/inforcer-series-modifying-conditional-access-at-scale-38f2838c0315>
-<https://medium.com/@jhope188/securecloudfoundation-not-another-breakglass-b631b5e95e05>
+- <https://medium.com/@jhope188/inforcer-series-conditional-access-and-configuration-restore-bc291a4ab814>
+- <https://medium.com/@jhope188/inforcer-series-modifying-conditional-access-at-scale-38f2838c0315>
+- <https://medium.com/@jhope188/securecloudfoundation-not-another-breakglass-b631b5e95e05>
 
 
 
