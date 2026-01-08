@@ -1,6 +1,6 @@
 # What Is Conditional Access
 
-** The Microsoft Explanation ** 
+**The Microsoft Explanation** 
 
 <https://learn.microsoft.com/en-us/entra/identity/conditional-access/overview>
 <https://learn.microsoft.com/en-us/entra/identity/conditional-access/plan-conditional-access>
@@ -14,9 +14,7 @@ Conditional Access is an Entra ID Zero trust policy engine that evaluates token 
   
 It runs at sign-in time and determines whether a token is issued, restricted, or denied.
 
-** The Jon Hope Explanation ** 
-
-Conditional Access 
+**The Jon Hope Explanation** 
 
 `Conditional Access` is the cloud identity and workload firewall.
 In the modern cloud, `identity` is the new server—it’s the control plane every access request must pass through.
@@ -32,8 +30,8 @@ Inforcer is the policy engine—GPO v2 for the cloud era.
 It operationalizes Conditional Access by defining standards once and enforcing them consistently at scale across multiple tenants, turning security intent into repeatable, governable outcomes
 
 >** 2 Important Differences to call out **
->CA has 195 policy limit
->Unlike Firewalls all policies apply at evaluation and dont have a priority ACL like an Azure NSG where a lower policy rule would apply before another
+> - CA has 195 policy limit
+> - Unlike Firewalls all policies apply at evaluation and dont have a priority ACL like an Azure NSG where a lower policy rule would apply before another
 
 
 ## Links from MVP's
