@@ -53,6 +53,7 @@ It operationalizes Conditional Access by defining standards once and enforcing t
 
 ## Defense in Depth CA Policies
 - <https://youtu.be/RA4BYQjLAAU?si=pSz4zeTOGYJf3iP3>
+- (AZSecurity with Dinant Paardenkooper: Episode 30 - Implementing real world defense-in-depth strategies with Microsoft Azure and Entra ID)
 
 ## Conditional Access Baseline 
 ![CAPolicy Baseline](https://github.com/Jhope188/ConditionalAccessPolicies/blob/main/CA.png)
