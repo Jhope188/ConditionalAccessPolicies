@@ -1,5 +1,57 @@
-# ConditionalAccessPolicies
-Defense in Depth CA Policies
+# What Is Conditional Access
+
+** The Microsoft Explanation ** 
+
+<https://learn.microsoft.com/en-us/entra/identity/conditional-access/overview>
+<https://learn.microsoft.com/en-us/entra/identity/conditional-access/plan-conditional-access>
+
+Conditional Access is an Entra ID Zero trust policy engine that evaluates token issuance and enforces controls based on:
+
+- Identity (user or workload)
+- Target resource (cloud app)
+- Context (location, device, risk, auth method)
+
+  
+It runs at sign-in time and determines whether a token is issued, restricted, or denied.
+
+** The Jon Hope Explanation ** 
+
+Conditional Access 
+
+`Conditional Access` is the cloud identity and workload firewall.
+In the modern cloud, `identity` is the new server—it’s the control plane every access request must pass through.
+
+Just like a firewall:
+- It doesn’t protect the server — it protects access
+- It evaluates every connection attempt
+- Rules are context-aware, not static
+
+** Im currently expanding this to include Inforcer **
+
+Inforcer is the policy engine—GPO v2 for the cloud era.
+It operationalizes Conditional Access by defining standards once and enforcing them consistently at scale across multiple tenants, turning security intent into repeatable, governable outcomes
+
+>** 2 Important Differences to call out **
+>CA has 195 policy limit
+>Unlike Firewalls all policies apply at evaluation and dont have a priority ACL like an Azure NSG where a lower policy rule would apply before another
+
+
+## Links from MVP's
+**Helpful Policy Links**
+* <https://github.com/kennethvs/cabaseline202510/tree/main>
+* <https://www.vansurksum.com/2025/10/12/configuring-conditional-access-for-guest-users-allowing-only-office-365-and-essential-apps/>
+* <https://www.vansurksum.com/2020/06/26/limit-access-to-outlook-web-access-and-sharepoint-online-and-onedrive-using-conditional-access-app-enforced-restrictions/>
+* <https://danielchronlund.com/2020/11/09/dctoolbox-powershell-module-for-microsoft-365-security-conditional-access-automation-and-more/>
+* <https://conditionalaccess.uk/some-policies-i-use-in-conditional-access/>
+
+** Blog Post from Me **
+<https://medium.com/@jhope188/inforcer-series-conditional-access-and-configuration-restore-bc291a4ab814>
+<https://medium.com/@jhope188/inforcer-series-modifying-conditional-access-at-scale-38f2838c0315>
+<https://medium.com/@jhope188/securecloudfoundation-not-another-breakglass-b631b5e95e05>
+
+
+
+## Defense in Depth CA Policies
 - <https://youtu.be/RA4BYQjLAAU?si=pSz4zeTOGYJf3iP3>
 
 ## Conditional Access Baseline 
@@ -7,12 +59,6 @@ Defense in Depth CA Policies
 
 ## Conditional Access (ACME) Policy Naming Documentation
 
-**Helpful Policy Links**
-* <https://github.com/kennethvs/cabaseline202510/tree/main>
-* <https://www.vansurksum.com/2025/10/12/configuring-conditional-access-for-guest-users-allowing-only-office-365-and-essential-apps/>
-* <https://www.vansurksum.com/2020/06/26/limit-access-to-outlook-web-access-and-sharepoint-online-and-onedrive-using-conditional-access-app-enforced-restrictions/>
-* <https://danielchronlund.com/2020/11/09/dctoolbox-powershell-module-for-microsoft-365-security-conditional-access-automation-and-more/>
-* <https://conditionalaccess.uk/some-policies-i-use-in-conditional-access/>
 
 ACME - [Scope] - [Control Type] - [Target] - [Descriptor/Notes]
 
