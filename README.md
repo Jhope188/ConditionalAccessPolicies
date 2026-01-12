@@ -140,6 +140,8 @@ ACME - [Scope] - [Control Type] - [Target] - [Descriptor/Notes]
 
 ---
 
+![DefenseInDepthPhases](https://github.com/Jhope188/ConditionalAccessPolicies/blob/main/Images/CALayers.png)
+
 
 
 ## Foundation Policies
