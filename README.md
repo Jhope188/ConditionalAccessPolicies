@@ -140,23 +140,28 @@ ACME - [Scope] - [Control Type] - [Target] - [Descriptor/Notes]
 
 ---
 
-## **GLOBAL Policies**
 
+
+## Foundation Policies
 - `ACME - GLOBAL - GRANT - MFA - All-Users`   (Exclude Microsoft Rights Management: <https://office365itpros.com/2024/02/12/conditional-access-mfa-email/>)
 - `ACME - GLOBAL - GRANT - MFA - All-Admins`
+- `ACME - GLOBAL - BLOCK - DeviceCodeAuthFlow`
+- `ACME - GLOBAL - BLOCK - LegacyAuthentication`
+- `ACME - GLOBAL - BLOCK - Countries-NotAllowed`(Uses ACME-TrustedCountries)
+- `ACME - GLOBAL - BLOCK - Countries-NotAllowed-NoExclusions`(Uses ACME-BlockedCountries)
+  
+
+## **Baeline Policies Policies**
+
 - `ACME - GLOBAL - GRANT - MFA-Passkeys - ADM-Users` (Note ensure you target ModernMFA with TAP, need TAP to register passkey)
 - `ACME - GLOBAL - GRANT - MFA - External-Guest-Users`
 - `ACME - GLOBAL - GRANT - RegisterSecurityInfoRequirements` (There are two options here. This is the lesser requiring MFA from anywhere but excluding trusted location)
 - `ACME - GLOBAL - GRANT - ACME - Terms of Use`(Needed policy to create)
 - `ACME - GLOBAL - GRANT  - Breakglass - TrustedLocations` (Breakglass policy for TOTP Account)
 - `ACME - GLOBAL - GRANT - MFA-Passkey - UserRegistration`
-- `ACME - GLOBAL - BLOCK - DeviceCodeAuthFlow`
 - `ACME - GLOBAL - BLOCK - Authentication Transfer`
 - `ACME - GLOBAL - BLOCK - UnsupportedDevicePlatforms`
-- `ACME - GLOBAL - BLOCK - Countries-NotAllowed`(Uses ACME-TrustedCountries)
-- `ACME - GLOBAL - BLOCK - Countries-NotAllowed-NoExclusions`(Uses ACME-BlockedCountries)
 - `ACME - GLOBAL - BLOCK - ServiceAccounts`
-- `ACME - GLOBAL - BLOCK - LegacyAuthentication`
 - `ACME - GLOBAL - BLOCK - RegisterSecurityInfoRequirements - ExludeTrustedLocation` (This policy blocks registration from anywhere but a trusted location)
 - `ACME - GLOBAL - SESSION - AllUserPersistence-9-12Hours`
 - `ACME - GLOBAL - SESSION - AdminPersistence-1Hour`
