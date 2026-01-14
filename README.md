@@ -57,7 +57,8 @@ It operationalizes Conditional Access by defining standards once and enforcing t
 - <https://www.youtube.com/watch?v=NSqfUZM7ql8&list=PLuPHrE2HRFpOpFWfE0XLE3LsuMh0_8-Kr&index=61>
 - <https://www.youtube.com/watch?v=DkCq8wWN9Sc&list=PLuPHrE2HRFpOpFWfE0XLE3LsuMh0_8-Kr&index=70>
   
-
+**ServicePrincipalList**
+- <https://github.com/merill/microsoft-info?tab=readme-ov-file>
 
 
 ## Defense in Depth CA Policies
