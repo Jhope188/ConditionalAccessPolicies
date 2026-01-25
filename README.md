@@ -47,6 +47,7 @@ It operationalizes Conditional Access by defining standards once and enforcing t
 - <https://danielchronlund.com/2020/11/09/dctoolbox-powershell-module-for-microsoft-365-security-conditional-access-automation-and-more/>
 - <https://conditionalaccess.uk/some-policies-i-use-in-conditional-access/>`Lewis Barry`
 - <https://www.welkasworld.com/post/conditional-access-essentials-introduction-use-cases-the-art-of-possible>`Ewelina`
+- <https://blog.overgard.dk/2026/automating-ca-policy-names/>
 
 **Blog Post from Me**
 - <https://medium.com/@jhope188/inforcer-series-conditional-access-and-configuration-restore-bc291a4ab814>
