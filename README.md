@@ -60,6 +60,7 @@ It operationalizes Conditional Access by defining standards once and enforcing t
   
 **ServicePrincipalList**
 - <https://github.com/merill/microsoft-info?tab=readme-ov-file>
+- <https://aka.ms/AppNames>
 
 
 ## Defense in Depth CA Policies
