@@ -64,6 +64,10 @@ It operationalizes Conditional Access by defining standards once and enforcing t
 
 **Condtional Access Documentation Tools**
 - <https://idpowertoys.merill.net/ca>
+- <https://ourcloudnetwork.com/export-conditional-access-policy-files-with-ca-policy-copier/>
+
+>> Cannot overstate how awesome of a tool this is for docuemnation of any orginizations CA Policy into a visual ppt
+![IDPowertoys]()
 
 ## Defense in Depth CA Policies
 - <https://youtu.be/RA4BYQjLAAU?si=pSz4zeTOGYJf3iP3>
