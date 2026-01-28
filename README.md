@@ -62,6 +62,8 @@ It operationalizes Conditional Access by defining standards once and enforcing t
 - <https://github.com/merill/microsoft-info?tab=readme-ov-file>
 - <https://aka.ms/AppNames>
 
+**Condtional Access Documentation Tools**
+- <https://idpowertoys.merill.net/ca>
 
 ## Defense in Depth CA Policies
 - <https://youtu.be/RA4BYQjLAAU?si=pSz4zeTOGYJf3iP3>
