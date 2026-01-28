@@ -70,7 +70,7 @@ It operationalizes Conditional Access by defining standards once and enforcing t
 - (AZSecurity with Dinant Paardenkooper: Episode 30 - Implementing real world defense-in-depth strategies with Microsoft Azure and Entra ID)
 
 ## Conditional Access Baseline 
-![CAPolicy Baseline](https://github.com/Jhope188/ConditionalAccessPolicies/blob/main/CA.png)
+![CAPolicy Baseline](https://github.com/Jhope188/ConditionalAccessPolicies/blob/main/Images/CA.png)
 
 ## Conditional Access (ACME) Policy Naming Documentation
 
