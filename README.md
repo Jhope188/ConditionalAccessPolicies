@@ -176,7 +176,7 @@ ACME - [Scope] - [Control Type] - [Target] - [Descriptor/Notes]
 - `ACME - GLOBAL - BLOCK - Countries-NotAllowed-NoExclusions`(Uses ACME-BlockedCountries)
   
 
-## **Baeline Policies Policies**
+## **Baseline Policies Policies**
 
 - `ACME - GLOBAL - GRANT - MFA-Passkeys - ADM-Users` (Note ensure you target ModernMFA with TAP, need TAP to register passkey)
 - `ACME - GLOBAL - GRANT - MFA - External-Guest-Users`
