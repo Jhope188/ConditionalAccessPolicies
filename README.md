@@ -69,12 +69,20 @@ It operationalizes Conditional Access by defining standards once and enforcing t
 >> Cannot overstate how awesome of a tool this is for docuemnation of any orginizations CA Policy into a visual ppt
 ![IDPowertoys](https://github.com/Jhope188/ConditionalAccessPolicies/blob/main/Images/PolicyDocumentation.png)
 
+**THINGS TO CONSIDER**
+- <https://office365itpros.com/2024/02/12/conditional-access-mfa-email/> Sensitivity Labels and MFA for all Cloud Apps
+- <https://nathanmcnulty.com/blog/2025/09/improving-passkey-registration-experiences/> Passkey Registration issues, Azure Credential Configuration Endpoint Service
+- 
+  
+
+
 ## Defense in Depth CA Policies
 - <https://youtu.be/RA4BYQjLAAU?si=pSz4zeTOGYJf3iP3>
 - (AZSecurity with Dinant Paardenkooper: Episode 30 - Implementing real world defense-in-depth strategies with Microsoft Azure and Entra ID)
 
 ## Conditional Access Baseline 
 ![CAPolicy Baseline](https://github.com/Jhope188/ConditionalAccessPolicies/blob/main/Images/CA.png)
+
 
 ## Conditional Access (ACME) Policy Naming Documentation
 
