@@ -72,7 +72,19 @@ It operationalizes Conditional Access by defining standards once and enforcing t
 **THINGS TO CONSIDER**
 - <https://office365itpros.com/2024/02/12/conditional-access-mfa-email/> Sensitivity Labels and MFA for all Cloud Apps
 - <https://nathanmcnulty.com/blog/2025/09/improving-passkey-registration-experiences/> Passkey Registration issues, Azure Credential Configuration Endpoint Service
-- 
+- <https://ourcloudnetwork.com/how-to-enable-require-risk-remediation-in-conditional-access/> New Risk Remediation and how it works
+- <https://learn.microsoft.com/en-us/entra/identity/conditional-access/concept-condition-filters-for-devices?wt.mc_id=MVP_452337#policy-behavior-with-filter-for-devices> How Device Filters work and apply Important!!!
+- <https://learn.microsoft.com/en-us/entra/identity/devices/concept-primary-refresh-token?tabs=windows-prt-issued%2Cbrowser-behavior-windows%2Cwindows-prt-used%2Cwindows-prt-renewal%2Cwindows-prt-protection%2Cwindows-apptokens%2Cwindows-browsercookies%2Cwindows-mfa#how-is-a-prt-used> PRT Behavior/Dont use Private Browsing/Use Profiles
+- <https://www.linkedin.com/feed/update/urn:li:activity:7339622643064578048/?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7339622643064578048%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29> ToU and GDAP access
+- <https://www.linkedin.com/feed/update/urn:li:activity:7326339470608277504/?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7326339470608277504%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29> Device Compliance vs Device Filtering Discussion and Best practices IMPORTANT!!
+- <https://www.natehutchinson.co.uk/post/mastering-the-mfa-mandate-considerations-and-recommendations-to-a-smooth-transition> Great Overall recommendations around legacy auth migration and MFA Successful rollouts and reporting
+- <https://learn.microsoft.com/en-us/entra/identity/conditional-access/concept-conditional-access-conditions> Conditions in Conditional Access. Pay attention to the Browser support. This one is huge on how a device recognizes compliance
+- <https://learn.microsoft.com/en-us/entra/identity/conditional-access/concept-condition-filters-for-devices> Why you need to be careful pushing out Device Compliance policies in Read Only
+```
+ Warning
+
+Policies that require compliant devices may prompt users on Mac, iOS, and Android to select a device certificate during policy evaluation, even though device compliance is not enforced. These prompts may repeat until the device is made compliant.
+```
   
 
 
