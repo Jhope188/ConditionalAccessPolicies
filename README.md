@@ -80,6 +80,8 @@ It operationalizes Conditional Access by defining standards once and enforcing t
 - <https://www.natehutchinson.co.uk/post/mastering-the-mfa-mandate-considerations-and-recommendations-to-a-smooth-transition> Great Overall recommendations around legacy auth migration and MFA Successful rollouts and reporting
 - <https://learn.microsoft.com/en-us/entra/identity/conditional-access/concept-conditional-access-conditions> Conditions in Conditional Access. Pay attention to the Browser support. This one is huge on how a device recognizes compliance
 - <https://learn.microsoft.com/en-us/entra/identity/conditional-access/concept-condition-filters-for-devices> Why you need to be careful pushing out Device Compliance policies in Read Only
+- <https://learn.microsoft.com/en-us/entra/identity/conditional-access/concept-token-protection> If creating a token protection CA Policy/ Ensure all Known limitations are reviewed/ Example I had an entra cloud pc that wasnt able to satisfy the requirement and needed an exclude filter for this policy
+  
 ```
  Warning
 
