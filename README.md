@@ -692,7 +692,8 @@ kusto
 - **Usage Example:** Applying Conditional Access policies, enhanced MFA requirements, VPN restrictions, or compliance controls tailored specifically for remote work scenarios.
 
 
-### ACME-W365-Devices-Dynamic
+### ACME-W365-Devices-Dynamic(Intune Device Filter)
+ NOTE: Tenant Admininistration > Filter Assignment
 
 - **Group Name:** `ACME-W365-Devices-Dynamic`
 - **Scope:** Internal Operational Group (`ACME`)
@@ -706,7 +707,8 @@ kusto
   (device.deviceModel -contains "Cloud PC")
 
 
- ### ACME-AVD-Host-Dynamic
+ ### ACME-AVD-Host-Dynamic(Intune Device Filter)
+ NOTE: Tenant Admininistration > Filter Assignment
 
 - **Group Name:** `ACME-AVD-Host-Dynamic`
 - **Scope:** Internal Operational Group (`ACME`)
