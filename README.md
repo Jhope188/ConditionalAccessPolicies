@@ -693,7 +693,7 @@ kusto
 
 
 ### ACME-W365-Devices-Dynamic
-
+NOTE: Tenant Administration > Assignment Filter
 
 - **Group Name:** `ACME-W365-Devices-Dynamic`
 - **Scope:** Internal Operational Group (`ACME`)
@@ -704,11 +704,11 @@ kusto
 - **Usage Example:** Targeting Conditional Access policies, device-compliance policies, or management rules specifically for dynamically managed Windows 365 devices.
 - **Membership Rule Example:**  
   ```azuread
-  (device.deviceModel -contains "Cloud PC")
+  (device.model -contains "CloudPC")
 
 
  ### ACME-AVD-Host-Dynamic
-
+NOTE: Tenant Administration > Assignment Filter
 
 - **Group Name:** `ACME-AVD-Host-Dynamic`
 - **Scope:** Internal Operational Group (`ACME`)
@@ -720,7 +720,7 @@ kusto
   Used for targeting Conditional Access device exclusions, Intune compliance policies, Defender configuration, monitoring, or security controls specific to Azure Virtual Desktop session hosts.
 - **Membership Rule Example:**  
   ```azuread
-  (device.deviceOSType -eq "Windows") and (device.operatingSystemSKU -eq "ServerRdsh")
+  (device.operatingSystemSKU -eq "ServerRdsh")
   ```
  
 
