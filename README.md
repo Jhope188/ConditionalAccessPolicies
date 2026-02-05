@@ -373,6 +373,12 @@ $ServicePrincipalID=@{
 }
 New-MgServicePrincipal -BodyParameter $ServicePrincipalId | Format-List id, DisplayName, AppId, SignInAudience
 
+Connect-MgGraph -Scopes "Application.ReadWrite.All"
+$ServicePrincipalID=@{
+“AppId” = “372140e0-b3b7-4226-8ef9-d57986796201” #Azure Windows VM Sign-In
+}
+New-MgServicePrincipal -BodyParameter $ServicePrincipalId | Format-List id, DisplayName, AppId, SignInAudience
+
 ```
 
 
