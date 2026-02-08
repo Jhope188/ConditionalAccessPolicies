@@ -860,9 +860,6 @@ None
 #### Assignments
 
 
-**Exclude Users:**
-- Alex Wilber (AlexW@M365x37845673.OnMicrosoft.com)
-
 **Exclude Groups:**
 - Azure-Breakglass
 
