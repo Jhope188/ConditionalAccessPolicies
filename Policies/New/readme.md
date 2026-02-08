@@ -3465,6 +3465,10 @@ None
 
 **IMPORTANT TO NOTE**
 
+Ran into issues myself in testing due to the entra CloudPC. Was able to modify per the known limitations and it works beautifully but it was a nice subtle reminder to review the Known issues.
+
+![TokenProtectionPolicy](https://github.com/Jhope188/ConditionalAccessPolicies/blob/main/Images/TokenProtection.png)
+
 ```
 Known limitations
 Office perpetual clients aren't supported.
