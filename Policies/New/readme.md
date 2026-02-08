@@ -3638,12 +3638,121 @@ Named Locations are used in Conditional Access policies to define trusted networ
 
 ---
 
+### IAC - AllowedCountries
+
+**Type:** Country-Based Named Location
+
+**Location ID:** `1fe18182-5167-4fb6-8fd7-e092917b97bc`
+
+**Purpose:** Defines the list of allowed countries from which users can access resources. Used in Conditional Access policies to permit access only from specific geographic regions.
+
+**Configuration:**
+- **Lookup Method:** Client IP Address
+- **Include Unknown Countries:** No
+- **Trusted Location:** No
+
+**Allowed Countries:**
+- **GB** - United Kingdom
+- **US** - United States
+
+**Created:** January 25, 2026
+**Last Modified:** January 25, 2026
+
+---
+
+### IAC - Blocked Countries
+
+**Type:** Country-Based Named Location
+
+**Location ID:** `12a14ddd-df08-455c-9196-4b112db40ee9`
+
+**Purpose:** Defines the list of countries from which access should be blocked. Used in Conditional Access policies to prevent access from high-risk or non-operational geographic regions.
+
+**Configuration:**
+- **Include Unknown Countries:** Yes (blocks access from unidentified locations)
+- **Trusted Location:** No
+
+**Blocked Countries:**
+- **AF** - Afghanistan
+- **DZ** - Algeria
+- **BY** - Belarus
+- **BR** - Brazil
+- **CN** - China
+- **CU** - Cuba
+- **IR** - Iran
+- **IQ** - Iraq
+- **NL** - Netherlands
+- **NG** - Nigeria
+- **KP** - North Korea
+- **PK** - Pakistan
+- **RU** - Russia
+- **SD** - Sudan
+- **SY** - Syria
+- **VE** - Venezuela
+- **VN** - Vietnam
+
+---
+
+### IAC - EntraConnect(IP)
+
+**Type:** IP-Based Named Location
+
+**Location ID:** `0e653cf8-616f-46d9-b2bd-d3689d689d6c`
+
+**Purpose:** Defines the IP address of the Entra Connect (formerly Azure AD Connect) server. Used to identify and trust authentication requests originating from the on-premises directory synchronization server.
+
+**Configuration:**
+- **Trusted Location:** Yes
+- **IP Ranges:**
+  - `128.85.196.27/32` (Single IP address)
+
+---
+
+### IAC - Inforcer (IP)
+
+**Type:** IP-Based Named Location
+- <https://docs.inforcer.com/en/articles/12458894-inforcer-product-ip-ranges>
+
+**Location ID:** `0d486de3-eaf8-449c-a5e0-259fdd8f62e6`
+
+**Purpose:** Defines the IP addresses for Inforcer organization locations. Used to identify and trust authentication requests from known organizational IP addresses.
+
+**Configuration:**
+- **Trusted Location:** Yes
+- **IP Ranges:**
+  - `172.177.20.193/32`
+  - `20.1.160.1/32`
+
+---
+
+### IAC - Trusted Locations (IP)
+
+**Type:** IP-Based Named Location
+
+**Location ID:** `0852b0c4-160e-441f-922b-a91615d22742`
+
+**Purpose:** Defines additional trusted IP addresses for organizational locations. Used to identify and trust authentication requests from known, secure network locations.
+
+**Configuration:**
+- **Trusted Location:** Yes
+- **IP Ranges:**
+  - `70.80.250.2230/32`
+  - `20.72.144.150/32`
+
+---
+
 ## Summary
 
 This documentation was automatically generated from exported IAC policy JSON files.
 
-**Total Conditional Access Policies:** 27
-**Total Named Locations:** 0
+**Total Conditional Access Policies:** 29
+**Total Named Locations:** 5
+
+**Named Locations Breakdown:**
+- Country-Based Locations: 2
+- IP-Based Locations: 3
+- Trusted IP Locations: 3
 
 For questions or updates to these policies, please refer to the change management process.
+
 
