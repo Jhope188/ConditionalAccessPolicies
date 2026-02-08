@@ -3466,6 +3466,7 @@ None
 **IMPORTANT TO NOTE**
 
 Ran into issues myself in testing due to the entra CloudPC. Was able to modify per the known limitations and it works beautifully but it was a nice subtle reminder to review the Known issues.
+**Cloud PCs deployed by Windows 365 that are Microsoft Entra joined**
 
 ![TokenProtectionPolicy](https://github.com/Jhope188/ConditionalAccessPolicies/blob/main/Images/TokenProtection.png)
 
