@@ -3300,6 +3300,9 @@ None
 
 ### IAC - O365 - BLOCK - NonWorkingHours
 
+- <https://ourcloudnetwork.com/enabling-time-based-restrictions-in-conditional-access/>
+- <https://ourcloudnetwork.com/configuring-time-based-conditional-access-policies/>
+
 **Purpose:** Blocks access to Office 365 applications outside of standard working hours (Monday-Friday, 9:00 AM - 5:00 PM UTC). Enforces time-based access control to reduce the risk of unauthorized access during off-hours when suspicious activity is more likely to go unnoticed. This policy helps protect against compromised credentials being used outside of normal business hours.
 
 **State:** `disabled`
