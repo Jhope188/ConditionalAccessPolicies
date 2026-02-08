@@ -1,0 +1,76 @@
+{
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#identity/conditionalAccess/policies/$entity",
+  "templateId": null,
+  "displayName": "IAC - GLOBAL - SESSION - Windows - TokenProtection",
+  "state": "enabledForReportingButNotEnforced",
+  "deletedDateTime": null,
+  "grantControls": null,
+  "partialEnablementStrategy": null,
+  "conditions": {
+    "userRiskLevels": [],
+    "signInRiskLevels": [],
+    "clientAppTypes": [
+      "mobileAppsAndDesktopClients"
+    ],
+    "locations": null,
+    "times": null,
+    "deviceStates": null,
+    "clientApplications": null,
+    "agents": null,
+    "applications": {
+      "includeApplications": [
+        "9cdead84-a844-4324-93f2-b2e6bb768d07",
+        "270efc09-cd0d-444b-a71f-39af4910ec45",
+        "0af06dc6-e4b5-4f28-818e-e78e62d137a5",
+        "00000003-0000-0ff1-ce00-000000000000",
+        "00000002-0000-0ff1-ce00-000000000000",
+        "cc15fd57-2c6c-4117-a88c-83b1d56b4bbe"
+      ],
+      "excludeApplications": [],
+      "includeUserActions": [],
+      "includeAuthenticationContextClassReferences": [],
+      "applicationFilter": null
+    },
+    "users": {
+      "includeUsers": [
+        "All"
+      ],
+      "excludeUsers": [],
+      "includeGroups": [],
+      "excludeGroups": [
+        "7a19a2c3-935c-40f4-b8b2-db80231f5149"
+      ],
+      "includeRoles": [],
+      "excludeRoles": [],
+      "includeGuestsOrExternalUsers": null,
+      "excludeGuestsOrExternalUsers": null
+    },
+    "platforms": {
+      "includePlatforms": [
+        "windows"
+      ],
+      "excludePlatforms": []
+    },
+    "devices": {
+      "includeDeviceStates": [],
+      "excludeDeviceStates": [],
+      "includeDevices": [],
+      "excludeDevices": [],
+      "deviceFilter": {
+        "mode": "exclude",
+        "rule": "device.systemLabels -contains \"CloudPC\" -and device.trustType -eq \"AzureAD\""
+      }
+    }
+  },
+  "sessionControls": {
+    "disableResilienceDefaults": null,
+    "applicationEnforcedRestrictions": null,
+    "cloudAppSecurity": null,
+    "signInFrequency": null,
+    "persistentBrowser": null,
+    "continuousAccessEvaluation": null,
+    "secureSignInSession": {
+      "isEnabled": true
+    }
+  }
+}
