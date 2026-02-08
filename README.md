@@ -262,7 +262,7 @@ ACME - [Scope] - [Control Type] - [Target] - [Descriptor/Notes]
 Summary: Going forward all policies I build in my lab will be part of inforcer 
 Recently I have been testing some policies for both Time based access and Token Protection. 
 I plan to upload these and do post on them in case anyone is curious on more of how they work.
-These will be in the policies > 
+These will be in the Policies > New Folder which will have some updated documnetation on all policies and the why and how they work with raw JSON
 
 ---
 
