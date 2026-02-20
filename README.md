@@ -1,4 +1,4 @@
-# What Is Conditional Access
+i'm# What Is Conditional Access
 
 
 ![Microsoft Conditional Access](https://github.com/Jhope188/ConditionalAccessPolicies/blob/main/Images/conditional-access-central-policy-engine-zero-trust.png)
@@ -71,6 +71,10 @@ It operationalizes Conditional Access by defining standards once and enforcing t
 - https://cloudbrothers.info/en/conditional-access-bypasses/
 - https://www.youtube.com/watch?v=yYQBeDFEkps&list=PLuPHrE2HRFpOpFWfE0XLE3LsuMh0_8-Kr&index=97
   
+
+**P2 Risky Signal features**
+- https://ourcloudnetwork.com/how-to-enable-require-risk-remediation-in-conditional-access/
+
 
 >> Cannot overstate how awesome of a tool this is for docuemnation of any orginizations CA Policy into a visual ppt
 ![IDPowertoys](https://github.com/Jhope188/ConditionalAccessPolicies/blob/main/Images/PolicyDocumentation.png)
