@@ -366,13 +366,14 @@ New-MgServicePrincipal -BodyParameter $ServicePrincipalId | Format-List id, Disp
 
 
 $ServicePrincipalID=@{
-“AppId” = “44660504c-45b3-4674-a709-71951a6b0763” #Microsoft Invitation Acceptance Portal 
+“AppId” = “4660504c-45b3-4674-a709-71951a6b0763” #Microsoft Invitation Acceptance Portal 
 }
 New-MgServicePrincipal -BodyParameter $ServicePrincipalId | Format-List id, DisplayName, AppId, SignInAudienc
 
+* New-MgServicePrincipal -AppId "4660504c-45b3-4674-a709-71951a6b0763" 
 
 $ServicePrincipalID=@{
-“AppId” = “44660504c-45b3-4674-a709-71951a6b0763” #Microsoft Invitation Acceptance Portal 
+“AppId” = “4660504c-45b3-4674-a709-71951a6b0763” #Microsoft Invitation Acceptance Portal 
 }
 New-MgServicePrincipal -BodyParameter $ServicePrincipalId | Format-List id, DisplayName, AppId, SignInAudienc
 
@@ -398,6 +399,9 @@ $ServicePrincipalID=@{
 “AppId” = “372140e0-b3b7-4226-8ef9-d57986796201” #Azure Windows VM Sign-In
 }
 New-MgServicePrincipal -BodyParameter $ServicePrincipalId | Format-List id, DisplayName, AppId, SignInAudience
+
+
+New-MgServicePrincipal -AppId "19db86c3-b2b9-44cc-b339-36da233a3be2" #My Signins
 
 ```
 
