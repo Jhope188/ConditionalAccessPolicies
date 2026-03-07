@@ -1,0 +1,66 @@
+{
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#identity/conditionalAccess/policies/$entity",
+  "templateId": null,
+  "displayName": "ACME - WORKLOAD - BLOCK - EntraConnectIDSync - ExcludeEntraConnectIP",
+  "state": "enabledForReportingButNotEnforced",
+  "deletedDateTime": null,
+  "partialEnablementStrategy": null,
+  "sessionControls": null,
+  "conditions": {
+    "userRiskLevels": [],
+    "signInRiskLevels": [],
+    "clientAppTypes": [
+      "all"
+    ],
+    "platforms": null,
+    "times": null,
+    "deviceStates": null,
+    "devices": null,
+    "agents": null,
+    "applications": {
+      "includeApplications": [
+        "None"
+      ],
+      "excludeApplications": [],
+      "includeUserActions": [],
+      "includeAuthenticationContextClassReferences": [],
+      "applicationFilter": null
+    },
+    "users": {
+      "includeUsers": [
+        "None"
+      ],
+      "excludeUsers": [],
+      "includeGroups": [],
+      "excludeGroups": [],
+      "includeRoles": [],
+      "excludeRoles": [],
+      "includeGuestsOrExternalUsers": null,
+      "excludeGuestsOrExternalUsers": null
+    },
+    "locations": {
+      "includeLocations": [
+        "All"
+      ],
+      "excludeLocations": [
+        "0de51b52-e831-4248-a053-a51aa56f28f1"
+      ]
+    },
+    "clientApplications": {
+      "includeServicePrincipals": [
+        "36f1bcde-43dc-44f4-86fc-34133aa68573"
+      ],
+      "excludeServicePrincipals": []
+    }
+  },
+  "grantControls": {
+    "operator": "OR",
+    "builtInControls": [
+      "block"
+    ],
+    "customAuthenticationFactors": [],
+    "termsOfUse": [],
+    "authenticationStrength@odata.context": "https://graph.microsoft.com/beta/$metadata#identity/conditionalAccess/policies('021f1fec-4c8c-4900-aab6-9aaf64b0fafc')/grantControls/authenticationStrength/$entity",
+    "authenticationStrength": null
+  }
+}
