@@ -403,6 +403,15 @@ New-MgServicePrincipal -BodyParameter $ServicePrincipalId | Format-List id, Disp
 
 New-MgServicePrincipal -AppId "19db86c3-b2b9-44cc-b339-36da233a3be2" #My Signins
 
+
+# Verify registration:
+
+Connect-MgGraph -Scopes "Application.ReadWrite.All"
+$ServicePrincipalID=@{
+“AppId” = “fa3d9a0c-3fb0-42cc-9193-47c7ecd2edbd” #MicrosoftPartnerCenter
+}
+New-MgServicePrincipal -BodyParameter $ServicePrincipalId | Format-List id, DisplayName, AppId, SignInAudience
+
 ```
 
 
