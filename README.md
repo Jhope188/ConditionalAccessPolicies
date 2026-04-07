@@ -412,6 +412,8 @@ $ServicePrincipalID=@{
 }
 New-MgServicePrincipal -BodyParameter $ServicePrincipalId | Format-List id, DisplayName, AppId, SignInAudience
 
+New-MgServicePrincipal -AppId "fa3d9a0c-3fb0-42cc-9193-47c7ecd2edbd" #MicrosoftPartnerCenter
+
 ```
 
 
