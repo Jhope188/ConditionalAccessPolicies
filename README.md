@@ -414,6 +414,12 @@ New-MgServicePrincipal -BodyParameter $ServicePrincipalId | Format-List id, Disp
 
 New-MgServicePrincipal -AppId "fa3d9a0c-3fb0-42cc-9193-47c7ecd2edbd" #MicrosoftPartnerCenter
 
+
+
+
+https://www.linkedin.com/feed/update/urn:li:activity:7447965808904908800/?originTrackingId=zrBvjR0ixDcrPE0xDd%2B2vg%3D%3D
+New-MgServicePrincipal -Appid 'ba9ff945-a723-4ab5-a977-bd8c9044fe61' #MyStaff
+
 ```
 
 
