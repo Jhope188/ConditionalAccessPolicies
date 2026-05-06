@@ -44,6 +44,7 @@ It operationalizes Conditional Access by defining standards once and enforcing t
 - <https://github.com/kennethvs/cabaseline202510/tree/main>
 - <https://www.vansurksum.com/2025/10/12/configuring-conditional-access-for-guest-users-allowing-only-office-365-and-essential-apps/>
 - <https://www.vansurksum.com/2020/06/26/limit-access-to-outlook-web-access-and-sharepoint-online-and-onedrive-using-conditional-access-app-enforced-restrictions/>
+- <https://github.com/j0eyv/ConditionalAccessBaseline> `Joey Verlinden`
 - <https://danielchronlund.com/2020/11/09/dctoolbox-powershell-module-for-microsoft-365-security-conditional-access-automation-and-more/>
 - <https://conditionalaccess.uk/some-policies-i-use-in-conditional-access/>`Lewis Barry`
 - <https://www.welkasworld.com/post/conditional-access-essentials-introduction-use-cases-the-art-of-possible>`Ewelina`
