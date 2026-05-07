@@ -1,0 +1,173 @@
+{
+  "Conditions": {
+    "Applications": {
+      "ApplicationFilter": {
+        "Mode": null,
+        "Rule": null
+      },
+      "ExcludeApplications": [],
+      "IncludeApplications": [
+        "All"
+      ],
+      "IncludeAuthenticationContextClassReferences": [],
+      "IncludeUserActions": []
+    },
+    "AuthenticationFlows": {
+      "TransferMethods": null
+    },
+    "ClientAppTypes": [
+      "all"
+    ],
+    "ClientApplications": {
+      "ExcludeServicePrincipals": null,
+      "IncludeServicePrincipals": null,
+      "ServicePrincipalFilter": {
+        "Mode": null,
+        "Rule": null
+      }
+    },
+    "Devices": {
+      "DeviceFilter": {
+        "Mode": null,
+        "Rule": null
+      }
+    },
+    "InsiderRiskLevels": null,
+    "Locations": {
+      "ExcludeLocations": null,
+      "IncludeLocations": null
+    },
+    "Platforms": {
+      "ExcludePlatforms": null,
+      "IncludePlatforms": null
+    },
+    "ServicePrincipalRiskLevels": [],
+    "SignInRiskLevels": [],
+    "UserRiskLevels": [],
+    "Users": {
+      "ExcludeGroups": [
+        "62d67e66-2bc9-43cd-b00c-6326dae53d18",
+        "b63c3682-06c6-45f0-9692-ee76b604b4f9"
+      ],
+      "ExcludeGuestsOrExternalUsers": {
+        "ExternalTenants": {
+          "MembershipKind": null
+        },
+        "GuestOrExternalUserTypes": null
+      },
+      "ExcludeRoles": [],
+      "ExcludeUsers": [],
+      "IncludeGroups": [],
+      "IncludeGuestsOrExternalUsers": {
+        "ExternalTenants": {
+          "MembershipKind": null
+        },
+        "GuestOrExternalUserTypes": null
+      },
+      "IncludeRoles": [
+        "62e90394-69f5-4237-9190-012177145e10",
+        "f2ef992c-3afb-46b9-b7cf-a126ee74c451",
+        "e8611ab8-c189-46e8-94e1-60213ab1f814",
+        "7be44c8a-adaf-4e2a-84d6-ab2649e08a13",
+        "194ae4cb-b126-40b2-bd5b-6091b380977d",
+        "5f2222b1-57c3-48ba-8ad5-d4759f1fde6f",
+        "5d6b6bb7-de71-4623-b4af-96380a352509",
+        "17315797-102d-40b4-93e0-432062caca18",
+        "e6d1a23a-da11-4be4-9570-befc86d067a7",
+        "892c5842-a9a6-463a-8041-72aa08ca3cf6",
+        "c4e39bd9-1100-46d3-8c65-fb160da0071f",
+        "0526716b-113d-4c15-b2c8-68e3c22b9f80",
+        "b1be1c3e-b65d-4f19-8427-f6fa0d97feb9",
+        "8ac3fc64-6eca-42ea-9e69-59f4c7b60eb2",
+        "45d8d3c5-c802-45c6-b32a-1d70b5e1e86e",
+        "be2f45a1-457d-42af-a067-6ec1fa63bc45",
+        "9b895d92-2cd3-44c7-9d02-a6ac2d5ea5c3",
+        "158c047a-c907-4556-b7ef-446551a6b5f7",
+        "cf1c38e5-3621-4004-a7cb-879624dced7c",
+        "fe930be7-5e62-47db-91af-98c3a49a38b1",
+        "fdd7a751-b60b-444a-984c-02652fe8fa1c",
+        "966707d0-3269-4727-9be2-8c3a10f19b9d",
+        "729827e3-9c14-49f7-bb1b-9608f156bbb8",
+        "4d6ac14f-3453-41d0-bef9-a3e0c569773a",
+        "95e79109-95c0-4d8e-aee3-d01accf2d47b",
+        "3a2c62db-5318-420d-8d74-23affee5d9d5",
+        "7698a772-787b-4ac8-901f-60d6b08affd2",
+        "11451d60-acb2-45eb-a7d6-43d0f0125c13",
+        "32696413-001a-46ae-978c-ce0f6b3620d2",
+        "29232cdf-9323-42fd-ade2-1d097af3e4de",
+        "f28a1f50-f6e7-4571-818b-6a12f2af6b6c",
+        "69091246-20e8-4a56-aa4d-066075b2a7a8",
+        "a9ea8996-122f-4c74-9520-8edcd192826c",
+        "44367163-eba1-44c3-98af-f5787879f96a",
+        "11648597-926c-4cf3-9c36-bcebb0ba8dcc",
+        "88d8e3e3-8f55-4a1e-953a-9b9898b8876b",
+        "9360feb5-f418-4baa-8175-e2a00bac4301",
+        "8329153b-31d0-4727-b945-745eb3bc5f31",
+        "b0f54661-2d74-4c50-afa3-1ec803f12efe",
+        "4a5d8f65-41da-4de4-8968-e035b65339cf",
+        "ac434307-12b9-4fa1-a708-88bf58caabc1",
+        "d37c8bed-0711-4417-ba38-b4abe66ce4c2",
+        "59d46f88-662b-457b-bceb-5c3809e5908f",
+        "db506228-d27e-4b7d-95e5-295956d6615f",
+        "1fe13547-53f6-408d-ac04-7f8eed167b38",
+        "b6a27b2b-f905-4b2e-81b5-0d90e0ef1fdb"
+      ],
+      "IncludeUsers": []
+    }
+  },
+  "CreatedDateTime": "2026-05-04T23:43:32.0101131Z",
+  "Description": null,
+  "DisplayName": "IAC - GLOBAL - GRANT - MFA - AllAdmins",
+  "GrantControls": {
+    "AuthenticationStrength": {
+      "AllowedCombinations": [
+        "windowsHelloForBusiness",
+        "fido2",
+        "x509CertificateMultiFactor",
+        "temporaryAccessPassOneTime",
+        "temporaryAccessPassMultiUse"
+      ],
+      "CombinationConfigurations": [],
+      "CreatedDateTime": "2026-05-04T23:40:40.6249015Z",
+      "Description": "",
+      "DisplayName": "Modern MFA + TAP",
+      "Id": "42de22a7-5339-4a58-b560-28565d53b14d",
+      "ModifiedDateTime": "2026-05-04T23:40:40.6249015Z",
+      "PolicyType": "custom",
+      "RequirementsSatisfied": "mfa"
+    },
+    "BuiltInControls": [],
+    "CustomAuthenticationFactors": [],
+    "Operator": "OR",
+    "TermsOfUse": []
+  },
+  "Id": "f893f39f-2ab3-4f1e-a8e1-9a2b9589a9ce",
+  "ModifiedDateTime": "2026-05-06T22:19:41.8119036Z",
+  "SessionControls": {
+    "ApplicationEnforcedRestrictions": {
+      "IsEnabled": null
+    },
+    "CloudAppSecurity": {
+      "CloudAppSecurityType": null,
+      "IsEnabled": null
+    },
+    "DisableResilienceDefaults": null,
+    "PersistentBrowser": {
+      "IsEnabled": null,
+      "Mode": null
+    },
+    "SecureSignInSession": {
+      "IsEnabled": null
+    },
+    "SignInFrequency": {
+      "AuthenticationType": null,
+      "FrequencyInterval": null,
+      "IsEnabled": null,
+      "Type": null,
+      "Value": null
+    }
+  },
+  "State": "enabled",
+  "TemplateId": null,
+  "AdditionalProperties": {}
+}
