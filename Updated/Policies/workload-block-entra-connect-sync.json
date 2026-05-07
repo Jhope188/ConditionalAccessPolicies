@@ -1,5 +1,5 @@
 {
-  "displayName": "YOURORG - WORKLOAD - BLOCK - EntraConnectIDSync - ExcludeEntraConnectIP",
+  "displayName": "IAC - WORKLOAD - BLOCK - EntraConnectIDSync - ExcludeEntraConnectIP",
   "state": "disabled",
   "conditions": {
     "users": {
