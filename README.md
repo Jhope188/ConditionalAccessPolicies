@@ -401,7 +401,7 @@ $ServicePrincipalID=@{
 }
 New-MgServicePrincipal -BodyParameter $ServicePrincipalId | Format-List id, DisplayName, AppId, SignInAudience
 
-
+New-MgServicePrincipal -AppId "c2b688fe-48c0-464b-a89c-67041aa8fcb2" #MicrosoftDefenderATP MAM
 New-MgServicePrincipal -AppId "19db86c3-b2b9-44cc-b339-36da233a3be2" #My Signins
 
 
