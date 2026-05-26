@@ -35,6 +35,7 @@ It operationalizes Conditional Access by defining standards once and enforcing t
 
 > **Important CA Differences and notes to call out**
 > - CA has 195 policy limit
+> - Limit increase from 195 to 244 [New Conditional Access Limits](https://www.alitajran.com/conditional-access-policy-maximum-limit/)
 > - Unlike Firewalls all policies apply at evaluation and dont have a priority ACL like an Azure NSG where a lower policy rule would apply before another
 > - CA requires a P1 license for basic functions, P2 for Identity Protection features, Protecting Service Principals require Workload ID Premium license
 
