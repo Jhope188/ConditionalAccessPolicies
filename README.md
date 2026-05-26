@@ -204,6 +204,8 @@ ACME - [Scope] - [Control Type] - [Target] - [Descriptor/Notes]
 
 ## **Baseline Policies Policies**
 
+- `IAC - GLOBAL - GRANT - MFA - B2B-Guest`
+- `IAC - GLOBAL - GRANT - MFA - Mixed-Guests` Updated Guest Policies 
 - `ACME - GLOBAL - GRANT - MFA-Passkeys - ADM-Users` (Note ensure you target ModernMFA with TAP, need TAP to register passkey)
 - `ACME - GLOBAL - GRANT - MFA - External-Guest-Users`
 - `ACME - GLOBAL - GRANT - RegisterSecurityInfoRequirements` (There are two options here. This is the lesser requiring MFA from anywhere but excluding trusted location)
