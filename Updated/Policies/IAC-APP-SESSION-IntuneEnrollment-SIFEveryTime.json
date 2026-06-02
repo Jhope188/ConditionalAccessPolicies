@@ -1,0 +1,54 @@
+{
+  "displayName": "IAC - APP - SESSION - IntuneEnrollment-SIFEveryTime",
+  "state": "enabledForReportingButNotEnforced",
+  "conditions": {
+    "users": {
+      "includeUsers": [
+        "All"
+      ],
+      "excludeUsers": [],
+      "includeGroups": [],
+      "excludeGroups": [
+        "CA-GlobalExclusions-GroupID-ReplaceMe"
+      ],
+      "includeRoles": [],
+      "excludeRoles": []
+    },
+    "applications": {
+      "includeApplications": [
+        "d4ebce55-015a-49b5-a083-c84d1797ae8c"
+      ],
+      "excludeApplications": [],
+      "includeUserActions": [],
+      "includeAuthenticationContextClassReferences": []
+    },
+    "clientAppTypes": [
+      "all"
+    ],
+    "platforms": null,
+    "locations": null,
+    "times": null,
+    "deviceStates": null,
+    "devices": null,
+    "clientApplications": null,
+    "agents": null,
+    "userRiskLevels": [],
+    "signInRiskLevels": []
+  },
+  "grantControls": null,
+  "sessionControls": {
+    "signInFrequency": {
+      "value": null,
+      "type": null,
+      "authenticationType": "primaryAndSecondaryAuthentication",
+      "frequencyInterval": "everyTime",
+      "isEnabled": true
+    },
+    "persistentBrowser": null,
+    "cloudAppSecurity": null,
+    "applicationEnforcedRestrictions": null,
+    "continuousAccessEvaluation": null,
+    "secureSignInSession": null,
+    "disableResilienceDefaults": null
+  }
+}
