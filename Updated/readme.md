@@ -2,7 +2,7 @@
 
 **Generated:** May 6, 2026  
 **Tenant:** ConditionalAccessFans.onmicrosoft.com  
-**Total Policies:** 36
+**Total Policies:** 38
 
 ---
 
@@ -79,6 +79,10 @@
 35. [IAC - GLOBAL - GRANT - MFA - Mixed-Guests](#iac-global-grant-mfa-mixed-guests)
 
 36. [IAC - GLOBAL - GRANT - MFA - WindowsAzureAD-BaselineScopes](#iac-global-grant-mfa-windowsazuread-baselinescopes)
+
+37. [IAC - P2 - GLOBAL - GRANT - High-Risk Users - Risk Remediation](#iac-p2-global-grant-high-risk-users-risk-remediation)
+
+38. [IAC - P2 - GLOBAL - GRANT - EAM - High-Risk Users - Risk Remediation](#iac-p2-global-grant-eam-high-risk-users-risk-remediation)
 
 
 ---
@@ -1254,6 +1258,80 @@ This policy directly targets that resource, ensuring all token requests to Azure
 - [INFO]  Closes Azure AD Graph directory scope gap for tenants with resource exclusions in All resources policies
 
 ![IAC - GLOBAL - GRANT - MFA - WindowsAzureAD-BaselineScopes](Documentation/IAC%20-%20GLOBAL%20-%20GRANT%20-%20MFA%20-%20WindowsAzureAD-BaselineScopes/IAC%20-%20GLOBAL%20-%20GRANT%20-%20MFA%20-%20WindowsAzureAD-BaselineScopes.png)
+
+
+---
+
+# IAC - P2 - GLOBAL - GRANT - High-Risk Users - Risk Remediation
+
+**State:** Enabled  
+**Policy ID:** `544cd9ef-5e37-4568-9ad8-b8e151be1814`  
+**License Requirement:** Entra ID P2
+
+## Intent
+
+Forces high-risk users (standard population) through risk remediation — a secure password change via SSPR — combined with phishing-resistant authentication and every-time re-authentication. Closes the compromise window when Entra Identity Protection flags a user as high-risk.
+
+The EAM group is excluded and handled by a companion policy using built-in MFA instead of an auth strength object.
+
+> 📖 [Require password change for high-risk users](https://learn.microsoft.com/en-us/entra/identity/conditional-access/policy-risk-based-user)  
+> 📖 [Risk-based CA policy best practices](https://learn.microsoft.com/en-us/entra/id-protection/howto-identity-protection-configure-risk-policies)
+
+## Policy Configuration
+
+| Component | Value |
+|-----------|-------|
+| **Users** | All users |
+| **Excluded Groups** | Break-glass (`5628ad67`), EAM group (`8d0564e5`) |
+| **Cloud Apps** | All resources |
+| **Conditions** | User risk: High, Client apps: all |
+| **Grant Controls** | ✅ Auth strength: Modern MFA + TAP AND 🔑 Risk remediation |
+| **Grant Operator** | AND |
+| **Session Controls** | Sign-in frequency: Every time |
+
+## Audit Findings
+
+- ID: 544cd9ef-5e37-4568-9ad8-b8e151be1814
+- [INFO]  Break-glass group excluded ✓
+- [INFO]  EAM group excluded — covered by companion EAM policy
+
+![IAC - P2 - GLOBAL - GRANT - High-Risk Users - Risk Remediation](Documentation/IAC%20-%20P2%20-%20GLOBAL%20-%20GRANT%20-%20High-Risk%20Users%20-%20Risk%20Remediation/IAC%20-%20P2%20-%20GLOBAL%20-%20GRANT%20-%20High-Risk%20Users%20-%20Risk%20Remediation.png)
+
+
+---
+
+# IAC - P2 - GLOBAL - GRANT - EAM - High-Risk Users - Risk Remediation
+
+**State:** Enabled  
+**Policy ID:** `bb6a814e-808a-467c-9475-06f89140ce99`  
+**License Requirement:** Entra ID P2
+
+## Intent
+
+Companion to the standard high-risk risk-remediation policy. Targets users enrolled in External Authentication Methods (EAM) who cannot satisfy a custom authentication strength object. Uses built-in MFA + risk remediation with every-time sign-in frequency.
+
+> 📖 [Require password change for high-risk users](https://learn.microsoft.com/en-us/entra/identity/conditional-access/policy-risk-based-user)  
+> 📖 [External authentication methods](https://learn.microsoft.com/en-us/entra/identity/authentication/how-to-authentication-external-method-manage)
+
+## Policy Configuration
+
+| Component | Value |
+|-----------|-------|
+| **Users** | EAM group only (`8d0564e5-ab28-4283-9a94-9883c581adde`) |
+| **Excluded Groups** | Break-glass (`5628ad67`), Additional exclusion (`b63c3682`) |
+| **Cloud Apps** | All resources |
+| **Conditions** | User risk: High, Client apps: all |
+| **Grant Controls** | ✅ Require MFA AND 🔑 Risk remediation |
+| **Grant Operator** | AND |
+| **Session Controls** | Sign-in frequency: Every time |
+
+## Audit Findings
+
+- ID: bb6a814e-808a-467c-9475-06f89140ce99
+- [INFO]  Break-glass group excluded ✓
+- [INFO]  Companion to IAC - P2 - GLOBAL - GRANT - High-Risk Users - Risk Remediation
+
+![IAC - P2 - GLOBAL - GRANT - EAM - High-Risk Users - Risk Remediation](Documentation/IAC%20-%20P2%20-%20GLOBAL%20-%20GRANT%20-%20EAM%20-%20High-Risk%20Users%20-%20Risk%20Remediation/IAC%20-%20P2%20-%20GLOBAL%20-%20GRANT%20-%20EAM%20-%20High-Risk%20Users%20-%20Risk%20Remediation.png)
 
 
 ---

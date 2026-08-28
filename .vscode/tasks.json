@@ -1,0 +1,16 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "copy-risk-remediation-files",
+			"type": "shell",
+			"command": "cp \"/Users/jon/Desktop/ConditionalAccessPolicies/Images/IAC - P2 - GLOBAL - GRANT - High-Risk Users - Risk Remediation.png\" \"/Users/jon/Desktop/ConditionalAccessPolicies/Updated/Documentation/IAC - P2 - GLOBAL - GRANT - High-Risk Users - Risk Remediation/IAC - P2 - GLOBAL - GRANT - High-Risk Users - Risk Remediation.png\" && cp \"/Users/jon/Desktop/ConditionalAccessPolicies/Updated/Policies/IAC - P2 - GLOBAL - GRANT - High-Risk Users - Risk Remediation.json\" \"/Users/jon/Desktop/ConditionalAccessPolicies/Updated/Documentation/IAC - P2 - GLOBAL - GRANT - High-Risk Users - Risk Remediation/policy.json\" && cp \"/Users/jon/Desktop/ConditionalAccessPolicies/Images/IAC - P2 - GLOBAL - GRANT - EAM - High-Risk Users - Risk Remediation.png\" \"/Users/jon/Desktop/ConditionalAccessPolicies/Updated/Documentation/IAC - P2 - GLOBAL - GRANT - EAM - High-Risk Users - Risk Remediation/IAC - P2 - GLOBAL - GRANT - EAM - High-Risk Users - Risk Remediation.png\" && cp \"/Users/jon/Desktop/ConditionalAccessPolicies/Updated/Policies/IAC - P2 - GLOBAL - GRANT - EAM - High-Risk Users - Risk Remediation.json\" \"/Users/jon/Desktop/ConditionalAccessPolicies/Updated/Documentation/IAC - P2 - GLOBAL - GRANT - EAM - High-Risk Users - Risk Remediation/policy.json\" && echo \"Done\"",
+			"group": "build"
+		},
+		{
+			"label": "git-push-risk-remediation",
+			"type": "shell",
+			"command": "cd \"/Users/jon/Desktop/ConditionalAccessPolicies\" && git add -A && git commit -m \"feat: add risk remediation policies, docs, images (standard + EAM)\n\n- IAC - P2 - GLOBAL - GRANT - High-Risk Users - Risk Remediation\n- IAC - P2 - GLOBAL - GRANT - EAM - High-Risk Users - Risk Remediation\n- READMEs with MS Learn risk remediation links\n- Policy screenshots in Documentation folders\n- Updated readme.md: TOC entries 37-38, policy sections, count 36->38\" && git push && echo \"DONE\""
+		}
+	]
+}
