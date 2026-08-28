@@ -2,7 +2,7 @@
 
 **Generated:** May 6, 2026  
 **Tenant:** ConditionalAccessFans.onmicrosoft.com  
-**Total Policies:** 35
+**Total Policies:** 36
 
 ---
 
@@ -77,6 +77,8 @@
 34. [IAC - GLOBAL - GRANT - MFA - B2B-Guest](#iac-global-grant-mfa-b2b-guest)
 
 35. [IAC - GLOBAL - GRANT - MFA - Mixed-Guests](#iac-global-grant-mfa-mixed-guests)
+
+36. [IAC - GLOBAL - GRANT - MFA - WindowsAzureAD-BaselineScopes](#iac-global-grant-mfa-windowsazuread-baselinescopes)
 
 
 ---
@@ -1214,6 +1216,44 @@ Requires MFA for all guest users including ad hoc guests without a formal home t
 
 
 ![IAC - GLOBAL - GRANT - MFA - Mixed-Guests](Documentation/IAC%20-%20GLOBAL%20-%20GRANT%20-%20MFA%20-%20Mixed-Guests/IAC%20-%20GLOBAL%20-%20GRANT%20-%20MFA%20-%20Mixed-Guests.png)
+
+
+---
+
+# IAC - GLOBAL - GRANT - MFA - WindowsAzureAD-BaselineScopes
+
+**State:** Report-only  
+**Policy ID:** `ab659968-2e8a-4448-9710-d930aada3499`  
+**Created:** 2026-08-28
+
+## Intent
+
+Closes the **directory baseline scope gap** created by the March 2026 Microsoft enforcement change. When any "All resources" CA policy has resource exclusions, low-privilege directory scopes (`User.Read`, `openid`, `profile`, `email`, `offline_access`, `People.Read`) were previously exempt from enforcement. Microsoft has changed this — those scopes are now mapped to the **Windows Azure Active Directory** resource (`00000002-0000-0000-c000-000000000000`) as the enforcement audience.
+
+This policy directly targets that resource, ensuring all token requests to Azure AD Graph directory scopes meet the same MFA requirement as the rest of the baseline — even when other "All resources" policies contain exclusions.
+
+> **Microsoft documentation:** *"If the recommended baseline MFA policy without resource exclusions can't be configured because of business reasons, create a separate Conditional Access policy targeting Windows Azure Active Directory (00000002-0000-0000-c000-000000000000)."*  
+> 📖 [Conditional Access: Target resources — Protect directory information](https://learn.microsoft.com/en-us/entra/identity/conditional-access/concept-conditional-access-cloud-apps#protect-directory-information)
+
+## Policy Configuration
+
+| Component | Value |
+|-----------|-------|
+| **Users** | All users |
+| **Excluded Users** | Break-glass group (`5628ad67-f9d1-4495-abe3-99dc8f9074f1`) |
+| **Cloud Apps** | Windows Azure Active Directory (`00000002-0000-0000-c000-000000000000`) |
+| **Conditions** | Client apps: all |
+| **Grant Controls** | ✅ Require authentication strength: Modern MFA + TAP |
+| **Session Controls** | — |
+
+## Audit Findings
+
+- ID: ab659968-2e8a-4448-9710-d930aada3499
+- [INFO]  Policy is in report-only mode
+- [INFO]  Break-glass group excluded ✓
+- [INFO]  Closes Azure AD Graph directory scope gap for tenants with resource exclusions in All resources policies
+
+![IAC - GLOBAL - GRANT - MFA - WindowsAzureAD-BaselineScopes](Documentation/IAC%20-%20GLOBAL%20-%20GRANT%20-%20MFA%20-%20WindowsAzureAD-BaselineScopes/IAC%20-%20GLOBAL%20-%20GRANT%20-%20MFA%20-%20WindowsAzureAD-BaselineScopes.png)
 
 
 ---
