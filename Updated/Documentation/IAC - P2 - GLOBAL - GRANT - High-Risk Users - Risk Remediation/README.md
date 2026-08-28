@@ -20,7 +20,7 @@ This is the **standard-population** policy. Users in the EAM (External Authentic
 
 ## Policy Screenshot
 
-![IAC - P2 - GLOBAL - GRANT - High-Risk Users - Risk Remediation](IAC%20-%20P2%20-%20GLOBAL%20-%20GRANT%20-%20High-Risk%20Users%20-%20Risk%20Remediation.png)
+![IAC - P2 - GLOBAL - GRANT - High-Risk Users - Risk Remediation](IAC%20-%20P2%20-%20GLOBAL%20-%20GRANT%20-%20High-Risk%20Users%20-%20Risk%20Remediation/%20IAC%20-%20P2%20-%20GLOBAL%20-%20GRANT%20-%20High-Risk%20Users%20-%20Risk%20Remediation.png)
 
 ---
 
