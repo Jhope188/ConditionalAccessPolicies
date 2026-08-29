@@ -1,8 +1,8 @@
 # Conditional Access Policy Review
 
-**Generated:** May 6, 2026  
+**Generated:** August 28, 2026  
 **Tenant:** ConditionalAccessFans.onmicrosoft.com  
-**Total Policies:** 38
+**Total Policies:** 37
 
 ---
 
@@ -66,23 +66,21 @@
 
 29. [IAC - P2 - GLOBAL - GRANT - Medium-Risk Sign-Ins](#iac-p2-global-grant-medium-risk-sign-ins)
 
-30. [IAC - P2 - GLOBAL - GRANT - High-Risk Users](#iac-p2-global-grant-high-risk-users)
+30. [IAC - P2 - GLOBAL - BLOCK - RiskyUsers - RegisterSecurityInfo](#iac-p2-global-block-riskyusers-registersecurityinfo)
 
-31. [IAC - P2 - GLOBAL - GRANT - Medium-Risk Users](#iac-p2-global-grant-medium-risk-users)
+31. [IAC - P2 - APP - SESSION - PIM - Reauthentication](#iac-p2-app-session-pim-reauthentication)
 
-32. [IAC - P2 - GLOBAL - BLOCK - RiskyUsers - RegisterSecurityInfo](#iac-p2-global-block-riskyusers-registersecurityinfo)
+32. [IAC - GLOBAL - GRANT - MFA - B2B-Guest](#iac-global-grant-mfa-b2b-guest)
 
-33. [IAC - P2 - APP - SESSION - PIM - Reauthentication](#iac-p2-app-session-pim-reauthentication)
+33. [IAC - GLOBAL - GRANT - MFA - Mixed-Guests](#iac-global-grant-mfa-mixed-guests)
 
-34. [IAC - GLOBAL - GRANT - MFA - B2B-Guest](#iac-global-grant-mfa-b2b-guest)
+34. [IAC - GLOBAL - GRANT - MFA - WindowsAzureAD-BaselineScopes](#iac-global-grant-mfa-windowsazuread-baselinescopes)
 
-35. [IAC - GLOBAL - GRANT - MFA - Mixed-Guests](#iac-global-grant-mfa-mixed-guests)
+35. [IAC - P2 - GLOBAL - GRANT - High-Risk Users - Risk Remediation](#iac-p2-global-grant-high-risk-users-risk-remediation)
 
-36. [IAC - GLOBAL - GRANT - MFA - WindowsAzureAD-BaselineScopes](#iac-global-grant-mfa-windowsazuread-baselinescopes)
+36. [IAC - P2 - GLOBAL - GRANT - EAM - High-Risk Users - Risk Remediation](#iac-p2-global-grant-eam-high-risk-users-risk-remediation)
 
-37. [IAC - P2 - GLOBAL - GRANT - High-Risk Users - Risk Remediation](#iac-p2-global-grant-high-risk-users-risk-remediation)
-
-38. [IAC - P2 - GLOBAL - GRANT - EAM - High-Risk Users - Risk Remediation](#iac-p2-global-grant-eam-high-risk-users-risk-remediation)
+37. [IAC - P2 - GLOBAL - GRANT - Medium-Risk Users - Risk Remediation](#iac-p2-global-grant-medium-risk-users-risk-remediation)
 
 
 ---
@@ -1032,71 +1030,6 @@ Requires MFA for sign-ins assessed as medium-risk by Entra Identity Protection. 
 ---
 
 
-# IAC - P2 - GLOBAL - GRANT - High-Risk Users
-
-**State:** Report-only  
-**Policy ID:** `bb6a814e-808a-467c-9475-06f89140ce99`
-
-## Intent
-
-Blocks or requires password change for users whose account is flagged as high-risk by Entra Identity Protection (e.g., leaked credentials detected). Ensures compromised accounts cannot continue operating until risk is remediated. Requires Entra ID P2.
-
-## Policy Configuration
-
-| Component | Value |
-|-----------|-------|
-| **Users** | All users (1 exclusions) |
-| **Cloud Apps** | All cloud apps |
-| **Conditions** | User risk: high, Client apps: all |
-| **Grant Controls** | ✅ Require MFA AND 🔑 Require password change |
-| **Session Controls** | Sign-in frequency: null null |
-
-## Audit Findings
-
-- ID: bb6a814e-808a-467c-9475-06f89140ce99
-- [INFO]  Policy is in report-only mode
-- [MEDIUM]  All guest/external user type(s) excluded
-- [INFO]  Break-glass group excluded ✓
-
-
-![IAC - P2 - GLOBAL - GRANT - High-Risk Users](Documentation/IAC%20-%20P2%20-%20GLOBAL%20-%20GRANT%20-%20High-Risk%20Users/IAC%20-%20P2%20-%20GLOBAL%20-%20GRANT%20-%20High-Risk%20Users.png)
-
-
----
-
-
-# IAC - P2 - GLOBAL - GRANT - Medium-Risk Users
-
-**State:** Report-only  
-**Policy ID:** `7475b373-0544-4ee8-8827-cff35009136d`
-
-## Intent
-
-Requires MFA and secure password change for users assessed as medium-risk by Entra Identity Protection. Medium user risk typically indicates credential exposure in data breaches. Requires Entra ID P2.
-
-## Policy Configuration
-
-| Component | Value |
-|-----------|-------|
-| **Users** | All users (1 exclusions) |
-| **Cloud Apps** | All cloud apps |
-| **Conditions** | User risk: medium, Client apps: all |
-| **Grant Controls** | ✅ Require MFA AND 🔑 Require password change |
-| **Session Controls** | — |
-
-## Audit Findings
-
-- ID: 7475b373-0544-4ee8-8827-cff35009136d
-- [INFO]  Policy is in report-only mode
-- [INFO]  Break-glass group excluded ✓
-
-
-![IAC - P2 - GLOBAL - GRANT - Medium-Risk Users](Documentation/IAC%20-%20P2%20-%20GLOBAL%20-%20GRANT%20-%20Medium-Risk%20Users/IAC%20-%20P2%20-%20GLOBAL%20-%20GRANT%20-%20Medium-Risk%20Users.png)
-
-
----
-
-
 # IAC - P2 - GLOBAL - BLOCK - RiskyUsers - RegisterSecurityInfo
 
 **State:** Report-only  
@@ -1332,6 +1265,42 @@ Companion to the standard high-risk risk-remediation policy. Targets users enrol
 - [INFO]  Companion to IAC - P2 - GLOBAL - GRANT - High-Risk Users - Risk Remediation
 
 ![IAC - P2 - GLOBAL - GRANT - EAM - High-Risk Users - Risk Remediation](Documentation/IAC%20-%20P2%20-%20GLOBAL%20-%20GRANT%20-%20EAM%20-%20High-Risk%20Users%20-%20Risk%20Remediation/IAC%20-%20P2%20-%20GLOBAL%20-%20GRANT%20-%20EAM%20-%20High-Risk%20Users%20-%20Risk%20Remediation.png)
+
+
+---
+
+
+# IAC - P2 - GLOBAL - GRANT - Medium-Risk Users - Risk Remediation
+
+**State:** Report-only  
+**License Requirement:** Entra ID P2
+
+## Intent
+
+Requires authentication strength and risk remediation for users flagged as medium-risk by Entra Identity Protection. Replaces the legacy `passwordChange` pattern — risk remediation supports both password-based and passwordless (FIDO2, Windows Hello for Business) users.
+
+> 📖 [Configure risk policies](https://learn.microsoft.com/en-us/entra/id-protection/howto-identity-protection-configure-risk-policies)  
+> 📖 [Require risk remediation (preview)](https://learn.microsoft.com/en-us/entra/id-protection/concept-identity-protection-policies#require-risk-remediation-with-microsoft-managed-remediation-preview)
+
+## Policy Configuration
+
+| Component | Value |
+|-----------|-------|
+| **Users** | All users |
+| **Excluded Groups** | Break-glass (`5628ad67`), EAM users (`b63c3682`) |
+| **Cloud Apps** | All resources |
+| **Conditions** | User risk: Medium, Client apps: all |
+| **Grant Controls** | 🔐 Authentication strength (Modern MFA + TAP) AND 🔑 Risk remediation |
+| **Grant Operator** | AND |
+| **Session Controls** | — |
+
+## Audit Findings
+
+- [INFO]  Break-glass group excluded ✓
+- [MEDIUM]  All guest/external user type(s) excluded
+- [INFO]  EAM users excluded — companion EAM policy required for this user population
+
+![IAC - P2 - GLOBAL - GRANT - Medium-Risk Users - Risk Remediation](Documentation/IAC%20-%20P2%20-%20GLOBAL%20-%20GRANT%20-%20Medium-Risk%20Users%20-%20Risk%20Remediation/IAC%20-%20P2%20-%20GLOBAL%20-%20GRANT%20-%20Medium-Risk%20Users%20-%20Risk%20Remediation.png)
 
 
 ---
