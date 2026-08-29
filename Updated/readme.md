@@ -12,11 +12,11 @@
 
 2. [IAC - GLOBAL - GRANT - MFA - AllAdmins](#iac-global-grant-mfa-alladmins)
 
-3. [IAC - GLOBAL – BLOCK - Legacy Authentication](#iac-global-block-legacy-authentication)
+3. [IAC - GLOBAL - BLOCK - Legacy Authentication](#iac-global-block-legacy-authentication)
 
-4. [IAC - GLOBAL – BLOCK – Countries not Allowed](#iac-global-block-countries-not-allowed)
+4. [IAC - GLOBAL - BLOCK - Countries not Allowed](#iac-global-block-countries-not-allowed)
 
-5. [IAC - GLOBAL – BLOCK – Countries not Allowed - NoExclusions](#iac-global-block-countries-not-allowed-noexclusions)
+5. [IAC - GLOBAL - BLOCK - Countries not Allowed - NoExclusions](#iac-global-block-countries-not-allowed-noexclusions)
 
 6. [IAC - GLOBAL - GRANT - MFA - AllUsers](#iac-global-grant-mfa-allusers)
 
@@ -32,19 +32,19 @@
 
 12. [IAC - GLOBAL - SESSION - Windows - TokenProtection](#iac-global-session-windows-tokenprotection)
 
-13. [IAC - GLOBAL – BLOCK – Service Accounts](#iac-global-block-service-accounts)
+13. [IAC - GLOBAL - BLOCK - Service Accounts](#iac-global-block-service-accounts)
 
-14. [IAC - GLOBAL – SESSION – Admin Persistence (4 Hours)](#iac-global-session-admin-persistence-4-hours)
+14. [IAC - GLOBAL - SESSION - Admin Persistence (4 Hours)](#iac-global-session-admin-persistence-4-hours)
 
-15. [IAC - GLOBAL – SESSION – All Users Persistence (9-12 Hours)](#iac-global-session-all-users-persistence-9-12-hours)
+15. [IAC - GLOBAL - SESSION - All Users Persistence (9-12 Hours)](#iac-global-session-all-users-persistence-9-12-hours)
 
 16. [IAC - APP - BLOCK - SharePoint-OneDrive-NonTrustedLocations](#iac-app-block-sharepoint-onedrive-nontrustedlocations)
 
 17. [IAC - APP - inforcer - RequireMFA](#iac-app-inforcer-requiremfa)
 
-18. [IAC - APP – BLOCK – AVD - Exclude - AllowedAVDUsers](#iac-app-block-avd-exclude-allowedavdusers)
+18. [IAC - APP - BLOCK - AVD - Exclude - AllowedAVDUsers](#iac-app-block-avd-exclude-allowedavdusers)
 
-19. [IAC - APP – BLOCK – AVD - NonTrustedLocations](#iac-app-block-avd-nontrustedlocations)
+19. [IAC - APP - BLOCK - AVD - NonTrustedLocations](#iac-app-block-avd-nontrustedlocations)
 
 20. [IAC - AGENT - BLOCK - HighRiskAgent](#iac-agent-block-highriskagent)
 
@@ -52,9 +52,9 @@
 
 22. [IAC - INTUNE - GRANT - RequireCompliantDevice](#iac-intune-grant-requirecompliantdevice)
 
-23. [IAC - INTUNE – GRANT – Device Registration from trusted location](#iac-intune-grant-device-registration-from-trusted-location)
+23. [IAC - INTUNE - GRANT - Device Registration from trusted location](#iac-intune-grant-device-registration-from-trusted-location)
 
-24. [IAC - ZTCA - GLOBAL – BLOCK – Admin Portal](#iac-ztca-global-block-admin-portal)
+24. [IAC - ZTCA - GLOBAL - BLOCK - Admin Portal](#iac-ztca-global-block-admin-portal)
 
 25. [IAC - ZTCA - INTUNE - BLOCK - AllApps - ExcludeTrustedLocation](#iac-ztca-intune-block-allapps-excludetrustedlocation)
 
@@ -148,7 +148,7 @@ Requires MFA for all users holding admin directory roles (scoped via ADM-Users-D
 ---
 
 
-# IAC - GLOBAL – BLOCK - Legacy Authentication
+# IAC - GLOBAL - BLOCK - Legacy Authentication
 
 **State:** Enabled  
 **Policy ID:** `9eab445f-7f21-479a-85c9-29769512067e`
@@ -180,7 +180,7 @@ Blocks all legacy authentication protocols — SMTP AUTH, POP3, IMAP, MAPI over 
 ---
 
 
-# IAC - GLOBAL – BLOCK – Countries not Allowed
+# IAC - GLOBAL - BLOCK - Countries not Allowed
 
 **State:** Enabled  
 **Policy ID:** `f3f4ad30-86a8-4e29-8ec9-4efab1a459f5`
@@ -213,7 +213,7 @@ Blocks sign-in from countries on the Inforcer Blocked Countries named location. 
 ---
 
 
-# IAC - GLOBAL – BLOCK – Countries not Allowed - NoExclusions
+# IAC - GLOBAL - BLOCK - Countries not Allowed - NoExclusions
 
 **State:** Enabled  
 **Policy ID:** `1eaf943a-abad-4c77-b101-0c5342fc1044`
@@ -475,7 +475,7 @@ Cryptographically binds access tokens to the specific Windows device that authen
 ---
 
 
-# IAC - GLOBAL – BLOCK – Service Accounts
+# IAC - GLOBAL - BLOCK - Service Accounts
 
 **State:** Report-only  
 **Policy ID:** `99eabebd-877c-4800-aa15-d389b8767760`
@@ -509,7 +509,7 @@ Blocks sign-in for non-interactive service accounts (members of CA-ServiceAccoun
 ---
 
 
-# IAC - GLOBAL – SESSION – Admin Persistence (4 Hours)
+# IAC - GLOBAL - SESSION - Admin Persistence (4 Hours)
 
 **State:** Enabled  
 **Policy ID:** `04b969aa-3e98-4e0f-8b32-2319b199b56a`
@@ -540,7 +540,7 @@ Sets a 4-hour sign-in frequency for all admin-role users. After 4 hours of inact
 ---
 
 
-# IAC - GLOBAL – SESSION – All Users Persistence (9-12 Hours)
+# IAC - GLOBAL - SESSION - All Users Persistence (9-12 Hours)
 
 **State:** Report-only  
 **Policy ID:** `ea9459a9-91b6-4d2b-b929-03781ac81d54`
@@ -637,7 +637,7 @@ Requires MFA to access the Inforcer application specifically. Ensures that the m
 ---
 
 
-# IAC - APP – BLOCK – AVD - Exclude - AllowedAVDUsers
+# IAC - APP - BLOCK - AVD - Exclude - AllowedAVDUsers
 
 **State:** Report-only  
 **Policy ID:** `9bc2ad69-4aed-4242-807d-788446196b8b`
@@ -669,7 +669,7 @@ Blocks access to Azure Virtual Desktop for users not in the AllowedAVDUsers grou
 ---
 
 
-# IAC - APP – BLOCK – AVD - NonTrustedLocations
+# IAC - APP - BLOCK - AVD - NonTrustedLocations
 
 **State:** Report-only  
 **Policy ID:** `b13dd393-f644-45c8-81bf-aa7f4032ebd3`
@@ -801,7 +801,7 @@ Requires devices to be marked as compliant in Microsoft Intune before accessing 
 ---
 
 
-# IAC - INTUNE – GRANT – Device Registration from trusted location
+# IAC - INTUNE - GRANT - Device Registration from trusted location
 
 **State:** Report-only  
 **Policy ID:** `aeb49474-5250-4b65-8b0a-56c47127ee0f`
@@ -833,7 +833,7 @@ Requires devices to be registered with Entra ID (Intune enrollment) only from tr
 ---
 
 
-# IAC - ZTCA - GLOBAL – BLOCK – Admin Portal
+# IAC - ZTCA - GLOBAL - BLOCK - Admin Portal
 
 **State:** Report-only  
 **Policy ID:** `fafaa50c-0b61-4ac6-a589-f9a1120b2f9e`
