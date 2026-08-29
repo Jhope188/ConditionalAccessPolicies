@@ -8,79 +8,79 @@
 
 ## Table of Contents
 
-1. [IAC - GLOBAL - BLOCK - Device Code Auth Flow](#iac-global-block-device-code-auth-flow)
+1. [IAC - GLOBAL - BLOCK - Device Code Auth Flow](#iac---global---block---device-code-auth-flow)
 
-2. [IAC - GLOBAL - GRANT - MFA - AllAdmins](#iac-global-grant-mfa-alladmins)
+2. [IAC - GLOBAL - GRANT - MFA - AllAdmins](#iac---global---grant---mfa---alladmins)
 
-3. [IAC - GLOBAL - BLOCK - Legacy Authentication](#iac-global-block-legacy-authentication)
+3. [IAC - GLOBAL - BLOCK - Legacy Authentication](#iac---global---block---legacy-authentication)
 
-4. [IAC - GLOBAL - BLOCK - Countries not Allowed](#iac-global-block-countries-not-allowed)
+4. [IAC - GLOBAL - BLOCK - Countries not Allowed](#iac---global---block---countries-not-allowed)
 
-5. [IAC - GLOBAL - BLOCK - Countries not Allowed - NoExclusions](#iac-global-block-countries-not-allowed-noexclusions)
+5. [IAC - GLOBAL - BLOCK - Countries not Allowed - NoExclusions](#iac---global---block---countries-not-allowed---noexclusions)
 
-6. [IAC - GLOBAL - GRANT - MFA - AllUsers](#iac-global-grant-mfa-allusers)
+6. [IAC - GLOBAL - GRANT - MFA - AllUsers](#iac---global---grant---mfa---allusers)
 
-7. [IAC - GLOBAL - BLOCK - Authentication Transfer](#iac-global-block-authentication-transfer)
+7. [IAC - GLOBAL - BLOCK - Authentication Transfer](#iac---global---block---authentication-transfer)
 
-8. [IAC - GLOBAL - BLOCK - Unsupported Device Platforms](#iac-global-block-unsupported-device-platforms)
+8. [IAC - GLOBAL - BLOCK - Unsupported Device Platforms](#iac---global---block---unsupported-device-platforms)
 
-9. [IAC - GLOBAL - GRANT - BreakGlass - TrustedLocations](#iac-global-grant-breakglass-trustedlocations)
+9. [IAC - GLOBAL - GRANT - BreakGlass - TrustedLocations](#iac---global---grant---breakglass---trustedlocations)
 
-10. [IAC - GLOBAL - GRANT - MFA-Passkey - UserRegistration](#iac-global-grant-mfa-passkey-userregistration)
+10. [IAC - GLOBAL - GRANT - MFA-Passkey - UserRegistration](#iac---global---grant---mfa-passkey---userregistration)
 
-11. [IAC - GLOBAL - GRANT - MFA-Passkeys - ADM-Users](#iac-global-grant-mfa-passkeys-adm-users)
+11. [IAC - GLOBAL - GRANT - MFA-Passkeys - ADM-Users](#iac---global---grant---mfa-passkeys---adm-users)
 
-12. [IAC - GLOBAL - SESSION - Windows - TokenProtection](#iac-global-session-windows-tokenprotection)
+12. [IAC - GLOBAL - SESSION - Windows - TokenProtection](#iac---global---session---windows---tokenprotection)
 
-13. [IAC - GLOBAL - BLOCK - Service Accounts](#iac-global-block-service-accounts)
+13. [IAC - GLOBAL - BLOCK - Service Accounts](#iac---global---block---service-accounts)
 
-14. [IAC - GLOBAL - SESSION - Admin Persistence (4 Hours)](#iac-global-session-admin-persistence-4-hours)
+14. [IAC - GLOBAL - SESSION - Admin Persistence (4 Hours)](#iac---global---session---admin-persistence-4-hours)
 
-15. [IAC - GLOBAL - SESSION - All Users Persistence (9-12 Hours)](#iac-global-session-all-users-persistence-9-12-hours)
+15. [IAC - GLOBAL - SESSION - All Users Persistence (9-12 Hours)](#iac---global---session---all-users-persistence-9-12-hours)
 
-16. [IAC - APP - BLOCK - SharePoint-OneDrive-NonTrustedLocations](#iac-app-block-sharepoint-onedrive-nontrustedlocations)
+16. [IAC - APP - BLOCK - SharePoint-OneDrive-NonTrustedLocations](#iac---app---block---sharepoint-onedrive-nontrustedlocations)
 
-17. [IAC - APP - inforcer - RequireMFA](#iac-app-inforcer-requiremfa)
+17. [IAC - APP - inforcer - RequireMFA](#iac---app---inforcer---requiremfa)
 
-18. [IAC - APP - BLOCK - AVD - Exclude - AllowedAVDUsers](#iac-app-block-avd-exclude-allowedavdusers)
+18. [IAC - APP - BLOCK - AVD - Exclude - AllowedAVDUsers](#iac---app---block---avd---exclude---allowedavdusers)
 
-19. [IAC - APP - BLOCK - AVD - NonTrustedLocations](#iac-app-block-avd-nontrustedlocations)
+19. [IAC - APP - BLOCK - AVD - NonTrustedLocations](#iac---app---block---avd---nontrustedlocations)
 
-20. [IAC - AGENT - BLOCK - HighRiskAgent](#iac-agent-block-highriskagent)
+20. [IAC - AGENT - BLOCK - HighRiskAgent](#iac---agent---block---highriskagent)
 
-21. [IAC - AGENT - BLOCK - NonTrustedAgents](#iac-agent-block-nontrustedagents)
+21. [IAC - AGENT - BLOCK - NonTrustedAgents](#iac---agent---block---nontrustedagents)
 
-22. [IAC - INTUNE - GRANT - RequireCompliantDevice](#iac-intune-grant-requirecompliantdevice)
+22. [IAC - INTUNE - GRANT - RequireCompliantDevice](#iac---intune---grant---requirecompliantdevice)
 
-23. [IAC - INTUNE - GRANT - Device Registration from trusted location](#iac-intune-grant-device-registration-from-trusted-location)
+23. [IAC - INTUNE - GRANT - Device Registration from trusted location](#iac---intune---grant---device-registration-from-trusted-location)
 
-24. [IAC - ZTCA - GLOBAL - BLOCK - Admin Portal](#iac-ztca-global-block-admin-portal)
+24. [IAC - ZTCA - GLOBAL - BLOCK - Admin Portal](#iac---ztca---global---block---admin-portal)
 
-25. [IAC - ZTCA - INTUNE - BLOCK - AllApps - ExcludeTrustedLocation](#iac-ztca-intune-block-allapps-excludetrustedlocation)
+25. [IAC - ZTCA - INTUNE - BLOCK - AllApps - ExcludeTrustedLocation](#iac---ztca---intune---block---allapps---excludetrustedlocation)
 
-26. [IAC- ZTCA - GLOBAL - BLOCK - AllApps -Exclude CA-Global](#iac-ztca-global-block-allapps-exclude-ca-global)
+26. [IAC- ZTCA - GLOBAL - BLOCK - AllApps -Exclude CA-Global](#iac--ztca---global---block---allapps--exclude-ca-global)
 
-27. [IAC - APP - SESSION - O365 - Timeoutsettings](#iac-app-session-o365-timeoutsettings)
+27. [IAC - APP - SESSION - O365 - Timeoutsettings](#iac---app---session---o365---timeoutsettings)
 
-28. [IAC - P2 - GLOBAL - GRANT - High-Risk Sign-Ins](#iac-p2-global-grant-high-risk-sign-ins)
+28. [IAC - P2 - GLOBAL - GRANT - High-Risk Sign-Ins](#iac---p2---global---grant---high-risk-sign-ins)
 
-29. [IAC - P2 - GLOBAL - GRANT - Medium-Risk Sign-Ins](#iac-p2-global-grant-medium-risk-sign-ins)
+29. [IAC - P2 - GLOBAL - GRANT - Medium-Risk Sign-Ins](#iac---p2---global---grant---medium-risk-sign-ins)
 
-30. [IAC - P2 - GLOBAL - BLOCK - RiskyUsers - RegisterSecurityInfo](#iac-p2-global-block-riskyusers-registersecurityinfo)
+30. [IAC - P2 - GLOBAL - BLOCK - RiskyUsers - RegisterSecurityInfo](#iac---p2---global---block---riskyusers---registersecurityinfo)
 
-31. [IAC - P2 - APP - SESSION - PIM - Reauthentication](#iac-p2-app-session-pim-reauthentication)
+31. [IAC - P2 - APP - SESSION - PIM - Reauthentication](#iac---p2---app---session---pim---reauthentication)
 
-32. [IAC - GLOBAL - GRANT - MFA - B2B-Guest](#iac-global-grant-mfa-b2b-guest)
+32. [IAC - GLOBAL - GRANT - MFA - B2B-Guest](#iac---global---grant---mfa---b2b-guest)
 
-33. [IAC - GLOBAL - GRANT - MFA - Mixed-Guests](#iac-global-grant-mfa-mixed-guests)
+33. [IAC - GLOBAL - GRANT - MFA - Mixed-Guests](#iac---global---grant---mfa---mixed-guests)
 
-34. [IAC - GLOBAL - GRANT - MFA - WindowsAzureAD-BaselineScopes](#iac-global-grant-mfa-windowsazuread-baselinescopes)
+34. [IAC - GLOBAL - GRANT - MFA - WindowsAzureAD-BaselineScopes](#iac---global---grant---mfa---windowsazuread-baselinescopes)
 
-35. [IAC - P2 - GLOBAL - GRANT - High-Risk Users - Risk Remediation](#iac-p2-global-grant-high-risk-users-risk-remediation)
+35. [IAC - P2 - GLOBAL - GRANT - High-Risk Users - Risk Remediation](#iac---p2---global---grant---high-risk-users---risk-remediation)
 
-36. [IAC - P2 - GLOBAL - GRANT - EAM - High-Risk Users - Risk Remediation](#iac-p2-global-grant-eam-high-risk-users-risk-remediation)
+36. [IAC - P2 - GLOBAL - GRANT - EAM - High-Risk Users - Risk Remediation](#iac---p2---global---grant---eam---high-risk-users---risk-remediation)
 
-37. [IAC - P2 - GLOBAL - GRANT - Medium-Risk Users - Risk Remediation](#iac-p2-global-grant-medium-risk-users-risk-remediation)
+37. [IAC - P2 - GLOBAL - GRANT - Medium-Risk Users - Risk Remediation](#iac---p2---global---grant---medium-risk-users---risk-remediation)
 
 
 ---
