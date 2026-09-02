@@ -2,7 +2,7 @@
 
 **Generated:** August 28, 2026  
 **Tenant:** ConditionalAccessFans.onmicrosoft.com  
-**Total Policies:** 37
+**Total Policies:** 36
 
 ---
 
@@ -52,35 +52,33 @@
 
 22. [IAC - INTUNE - GRANT - RequireCompliantDevice](#iac---intune---grant---requirecompliantdevice)
 
-23. [IAC - INTUNE - GRANT - Device Registration from trusted location](#iac---intune---grant---device-registration-from-trusted-location)
+23. [IAC - ZTCA - GLOBAL - BLOCK - Admin Portal](#iac---ztca---global---block---admin-portal)
 
-24. [IAC - ZTCA - GLOBAL - BLOCK - Admin Portal](#iac---ztca---global---block---admin-portal)
+24. [IAC - ZTCA - INTUNE - BLOCK - AllApps - ExcludeTrustedLocation](#iac---ztca---intune---block---allapps---excludetrustedlocation)
 
-25. [IAC - ZTCA - INTUNE - BLOCK - AllApps - ExcludeTrustedLocation](#iac---ztca---intune---block---allapps---excludetrustedlocation)
+25. [IAC- ZTCA - GLOBAL - BLOCK - AllApps -Exclude CA-Global](#iac--ztca---global---block---allapps--exclude-ca-global)
 
-26. [IAC- ZTCA - GLOBAL - BLOCK - AllApps -Exclude CA-Global](#iac--ztca---global---block---allapps--exclude-ca-global)
+26. [IAC - APP - SESSION - O365 - Timeoutsettings](#iac---app---session---o365---timeoutsettings)
 
-27. [IAC - APP - SESSION - O365 - Timeoutsettings](#iac---app---session---o365---timeoutsettings)
+27. [IAC - P2 - GLOBAL - GRANT - High-Risk Sign-Ins](#iac---p2---global---grant---high-risk-sign-ins)
 
-28. [IAC - P2 - GLOBAL - GRANT - High-Risk Sign-Ins](#iac---p2---global---grant---high-risk-sign-ins)
+28. [IAC - P2 - GLOBAL - GRANT - Medium-Risk Sign-Ins](#iac---p2---global---grant---medium-risk-sign-ins)
 
-29. [IAC - P2 - GLOBAL - GRANT - Medium-Risk Sign-Ins](#iac---p2---global---grant---medium-risk-sign-ins)
+29. [IAC - P2 - GLOBAL - BLOCK - RiskyUsers - RegisterSecurityInfo](#iac---p2---global---block---riskyusers---registersecurityinfo)
 
-30. [IAC - P2 - GLOBAL - BLOCK - RiskyUsers - RegisterSecurityInfo](#iac---p2---global---block---riskyusers---registersecurityinfo)
+30. [IAC - P2 - APP - SESSION - PIM - Reauthentication](#iac---p2---app---session---pim---reauthentication)
 
-31. [IAC - P2 - APP - SESSION - PIM - Reauthentication](#iac---p2---app---session---pim---reauthentication)
+31. [IAC - GLOBAL - GRANT - MFA - B2B-Guest](#iac---global---grant---mfa---b2b-guest)
 
-32. [IAC - GLOBAL - GRANT - MFA - B2B-Guest](#iac---global---grant---mfa---b2b-guest)
+32. [IAC - GLOBAL - GRANT - MFA - Mixed-Guests](#iac---global---grant---mfa---mixed-guests)
 
-33. [IAC - GLOBAL - GRANT - MFA - Mixed-Guests](#iac---global---grant---mfa---mixed-guests)
+33. [IAC - GLOBAL - GRANT - MFA - WindowsAzureAD-BaselineScopes](#iac---global---grant---mfa---windowsazuread-baselinescopes)
 
-34. [IAC - GLOBAL - GRANT - MFA - WindowsAzureAD-BaselineScopes](#iac---global---grant---mfa---windowsazuread-baselinescopes)
+34. [IAC - P2 - GLOBAL - GRANT - High-Risk Users - Risk Remediation](#iac---p2---global---grant---high-risk-users---risk-remediation)
 
-35. [IAC - P2 - GLOBAL - GRANT - High-Risk Users - Risk Remediation](#iac---p2---global---grant---high-risk-users---risk-remediation)
+35. [IAC - P2 - GLOBAL - GRANT - EAM - High-Risk Users - Risk Remediation](#iac---p2---global---grant---eam---high-risk-users---risk-remediation)
 
-36. [IAC - P2 - GLOBAL - GRANT - EAM - High-Risk Users - Risk Remediation](#iac---p2---global---grant---eam---high-risk-users---risk-remediation)
-
-37. [IAC - P2 - GLOBAL - GRANT - Medium-Risk Users - Risk Remediation](#iac---p2---global---grant---medium-risk-users---risk-remediation)
+36. [IAC - P2 - GLOBAL - GRANT - Medium-Risk Users - Risk Remediation](#iac---p2---global---grant---medium-risk-users---risk-remediation)
 
 
 ---
@@ -796,38 +794,6 @@ Requires devices to be marked as compliant in Microsoft Intune before accessing 
 
 
 ![IAC - INTUNE - GRANT - RequireCompliantDevice](Documentation/IAC%20-%20INTUNE%20-%20GRANT%20-%20RequireCompliantDevice/IAC%20-%20INTUNE%20-%20GRANT%20-%20RequireCompliantDevice.png)
-
-
----
-
-
-# IAC - INTUNE - GRANT - Device Registration from trusted location
-
-**State:** Report-only  
-**Policy ID:** `aeb49474-5250-4b65-8b0a-56c47127ee0f`
-
-## Intent
-
-Requires devices to be registered with Entra ID (Intune enrollment) only from trusted network locations. Prevents device registration from unknown or untrusted networks, reducing the risk of attacker-controlled devices being enrolled in the tenant.
-
-## Policy Configuration
-
-| Component | Value |
-|-----------|-------|
-| **Users** | All users (3 exclusions) |
-| **Cloud Apps** | User actions: urn:user:registerdevice |
-| **Conditions** | Client apps: all |
-| **Grant Controls** | 🛡️ Auth strength: Multifactor authentication |
-| **Session Controls** | — |
-
-## Audit Findings
-
-- ID: aeb49474-5250-4b65-8b0a-56c47127ee0f
-- [INFO]  Policy is in report-only mode
-- [INFO]  Break-glass group excluded ✓
-
-
-![IAC - INTUNE – GRANT – Device Registration from trusted location](Documentation/IAC%20-%20INTUNE%20–%20GRANT%20–%20Device%20Registration%20from%20trusted%20location/IAC%20-%20INTUNE%20–%20GRANT%20–%20Device%20Registration%20from%20trusted%20location.png)
 
 
 ---
