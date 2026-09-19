@@ -590,7 +590,7 @@ Blocks access to SharePoint Online and OneDrive from network locations not liste
 
 | Component | Value |
 |-----------|-------|
-| **Users** | All users — exclude: SG-Entra-AUG-CAP-BreakglassAccounts, SG-NHI-AUG-ServiceAccounts-All, SG-Entra-AUG-CAP-GuestExclusions, SG-Entra-AUG-CAP-TravelingUsers |
+| **Users** | All users — exclude: SG-Entra-AUG-CAP-BreakglassAccounts, SG-NHI-AUG-ServiceAccounts-All, SG-Entra-AUG-CAP-GuestExclusions |
 | **Cloud Apps** | Office 365 SharePoint Online |
 | **Conditions** | Locations: All locations, Exclude locations: All trusted locations, Client apps: all |
 | **Grant Controls** | 🚫 Block access |
@@ -872,7 +872,7 @@ Blocks access to Microsoft admin portals (Azure Portal, Entra Admin Center, Intu
 
 | Component | Value |
 |-----------|-------|
-| **Users** | All users — exclude: SG-Entra-AUG-CAP-BreakglassAccounts, SG-Entra-DUG-Admins-AllAdminUsers |
+| **Users** | All users — exclude: SG-Entra-AUG-CAP-BreakglassAccounts |
 | **Cloud Apps** | Inforcer Integration, Azure Resource Manager, MicrosoftAdminPortals, Microsoft Purview Platform, My Staff |
 | **Conditions** | Client apps: all |
 | **Grant Controls** | 🚫 Block access |
