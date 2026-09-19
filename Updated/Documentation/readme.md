@@ -1,8 +1,8 @@
 # Conditional Access Policy Review
 
-**Updated:** August 28th, 2026  
+**Generated:** August 28, 2026 — Updated September 19, 2026  
 **Tenant:** ConditionalAccessFans.onmicrosoft.com  
-**Total Policies:** 38
+**Total Policies:** 37
 
 ---
 
@@ -98,7 +98,7 @@ Blocks the OAuth 2.0 device code flow across all users and apps. Device code phi
 
 | Component | Value |
 |-----------|-------|
-| **Users** | All users (2 exclusions) |
+| **Users** | All users — exclude: SG-Entra-AUG-CAP-BreakglassAccounts, SG-Entra-AUG-CAP-AzureDevOpsUsers, SG-Entra-DUG-CAP-TeamsRoomDevices |
 | **Cloud Apps** | All cloud apps |
 | **Conditions** | Client apps: all |
 | **Grant Controls** | 🚫 Block access |
@@ -111,7 +111,7 @@ Blocks the OAuth 2.0 device code flow across all users and apps. Device code phi
 - [INFO]  Break-glass group excluded ✓
 
 
-![IAC - GLOBAL - BLOCK - Device Code Auth Flow](IAC%20-%20GLOBAL%20-%20BLOCK%20-%20Device%20Code%20Auth%20Flow/IAC%20-%20GLOBAL%20-%20BLOCK%20-%20Device%20Code%20Auth%20Flow.png)
+![IAC - GLOBAL - BLOCK - Device Code Auth Flow](Documentation/IAC%20-%20GLOBAL%20-%20BLOCK%20-%20Device%20Code%20Auth%20Flow/IAC%20-%20GLOBAL%20-%20BLOCK%20-%20Device%20Code%20Auth%20Flow.png)
 
 
 ---
@@ -130,7 +130,7 @@ Requires MFA for all users holding admin directory roles (scoped via ADM-Users-D
 
 | Component | Value |
 |-----------|-------|
-| **Users** | 43 specific user/group/role targets |
+| **Users** | 46 directory roles — exclude: SG-Entra-AUG-CAP-BreakglassAccounts |
 | **Cloud Apps** | All cloud apps |
 | **Conditions** | Client apps: all |
 | **Grant Controls** | 🛡️ Auth strength: Modern MFA + TAP |
@@ -142,7 +142,7 @@ Requires MFA for all users holding admin directory roles (scoped via ADM-Users-D
 - [INFO]  Break-glass group excluded ✓
 
 
-![IAC - GLOBAL - GRANT - MFA - AllAdmins](IAC%20-%20GLOBAL%20-%20GRANT%20-%20MFA%20-%20AllAdmins/IAC%20-%20GLOBAL%20-%20GRANT%20-%20MFA%20-%20AllAdmins.png)
+![IAC - GLOBAL - GRANT - MFA - AllAdmins](Documentation/IAC%20-%20GLOBAL%20-%20GRANT%20-%20MFA%20-%20AllAdmins/IAC%20-%20GLOBAL%20-%20GRANT%20-%20MFA%20-%20AllAdmins.png)
 
 
 ---
@@ -161,7 +161,7 @@ Blocks all legacy authentication protocols — SMTP AUTH, POP3, IMAP, MAPI over 
 
 | Component | Value |
 |-----------|-------|
-| **Users** | All users (2 exclusions) |
+| **Users** | All users — exclude: SG-Entra-AUG-CAP-BreakglassAccounts |
 | **Cloud Apps** | All cloud apps |
 | **Conditions** | Client apps: exchangeActiveSync, other |
 | **Grant Controls** | 🚫 Block access |
@@ -174,7 +174,7 @@ Blocks all legacy authentication protocols — SMTP AUTH, POP3, IMAP, MAPI over 
 - [INFO]  Break-glass group excluded ✓
 
 
-![IAC - GLOBAL – BLOCK - Legacy Authentication](IAC%20-%20GLOBAL%20–%20BLOCK%20-%20Legacy%20Authentication/IAC%20-%20GLOBAL%20–%20BLOCK%20-%20Legacy%20Authentication.png)
+![IAC - GLOBAL – BLOCK - Legacy Authentication](Documentation/IAC%20-%20GLOBAL%20–%20BLOCK%20-%20Legacy%20Authentication/IAC%20-%20GLOBAL%20–%20BLOCK%20-%20Legacy%20Authentication.png)
 
 
 ---
@@ -193,7 +193,7 @@ Blocks sign-in from countries on the Inforcer Blocked Countries named location. 
 
 | Component | Value |
 |-----------|-------|
-| **Users** | All users (3 exclusions) |
+| **Users** | All users — exclude: SG-Entra-AUG-CAP-BreakglassAccounts, SG-Entra-AUG-CAP-TravelingUsers |
 | **Cloud Apps** | All cloud apps |
 | **Conditions** | Locations: All locations, Exclude locations: IAC - AllowedCountries, Client apps: all |
 | **Grant Controls** | 🚫 Block access |
@@ -207,7 +207,7 @@ Blocks sign-in from countries on the Inforcer Blocked Countries named location. 
 - [INFO]  Break-glass group excluded ✓
 
 
-![IAC - GLOBAL – BLOCK – Countries not Allowed](IAC%20-%20GLOBAL%20–%20BLOCK%20–%20Countries%20not%20Allowed/IAC%20-%20GLOBAL%20–%20BLOCK%20–%20Countries%20not%20Allowed.png)
+![IAC - GLOBAL – BLOCK – Countries not Allowed](Documentation/IAC%20-%20GLOBAL%20–%20BLOCK%20–%20Countries%20not%20Allowed/IAC%20-%20GLOBAL%20–%20BLOCK%20–%20Countries%20not%20Allowed.png)
 
 
 ---
@@ -226,7 +226,7 @@ Blocks sign-in from blocked countries with no group exclusions whatsoever — no
 
 | Component | Value |
 |-----------|-------|
-| **Users** | All users (2 exclusions) |
+| **Users** | All users — exclude: SG-Entra-AUG-CAP-BreakglassAccounts |
 | **Cloud Apps** | All cloud apps |
 | **Conditions** | Locations: IAC - Blocked Countries, Client apps: all |
 | **Grant Controls** | 🚫 Block access |
@@ -240,7 +240,7 @@ Blocks sign-in from blocked countries with no group exclusions whatsoever — no
 - [INFO]  Break-glass group excluded ✓
 
 
-![IAC - GLOBAL – BLOCK – Countries not Allowed - NoExclusions](IAC%20-%20GLOBAL%20–%20BLOCK%20–%20Countries%20not%20Allowed%20-%20NoExclusions/IAC%20-%20GLOBAL%20–%20BLOCK%20–%20Countries%20not%20Allowed%20-%20NoExclusions.png)
+![IAC - GLOBAL – BLOCK – Countries not Allowed - NoExclusions](Documentation/IAC%20-%20GLOBAL%20–%20BLOCK%20–%20Countries%20not%20Allowed%20-%20NoExclusions/IAC%20-%20GLOBAL%20–%20BLOCK%20–%20Countries%20not%20Allowed%20-%20NoExclusions.png)
 
 
 ---
@@ -259,8 +259,8 @@ Baseline MFA requirement for all licensed internal users (CA-P1InternalLicensedU
 
 | Component | Value |
 |-----------|-------|
-| **Users** | All users (3 exclusions) |
-| **Cloud Apps** | All cloud apps (2 exclusions) |
+| **Users** | All users — exclude: SG-Entra-AUG-CAP-BreakglassAccounts, SG-Entra-AUG-CAP-GlobalExclusions |
+| **Cloud Apps** | All cloud apps (exclude: Intune Enrollment, Microsoft Intune) |
 | **Conditions** | Client apps: all |
 | **Grant Controls** | ✅ Require MFA |
 | **Session Controls** | — |
@@ -274,7 +274,7 @@ Baseline MFA requirement for all licensed internal users (CA-P1InternalLicensedU
 - [INFO]  Break-glass group excluded ✓
 
 
-![IAC - GLOBAL - GRANT - MFA - AllUsers](IAC%20-%20GLOBAL%20-%20GRANT%20-%20MFA%20-%20AllUsers/IAC%20-%20GLOBAL%20-%20GRANT%20-%20MFA%20-%20AllUsers.png)
+![IAC - GLOBAL - GRANT - MFA - AllUsers](Documentation/IAC%20-%20GLOBAL%20-%20GRANT%20-%20MFA%20-%20AllUsers/IAC%20-%20GLOBAL%20-%20GRANT%20-%20MFA%20-%20AllUsers.png)
 
 
 ---
@@ -293,7 +293,7 @@ Blocks the authentication transfer flow, which allows session tokens to be moved
 
 | Component | Value |
 |-----------|-------|
-| **Users** | All users (3 exclusions) |
+| **Users** | All users — exclude: SG-Entra-AUG-CAP-BreakglassAccounts |
 | **Cloud Apps** | All cloud apps |
 | **Conditions** | Client apps: all |
 | **Grant Controls** | 🚫 Block access |
@@ -306,7 +306,7 @@ Blocks the authentication transfer flow, which allows session tokens to be moved
 - [INFO]  Break-glass group excluded ✓
 
 
-![IAC - GLOBAL - BLOCK - Authentication Transfer](IAC%20-%20GLOBAL%20-%20BLOCK%20-%20Authentication%20Transfer/IAC%20-%20GLOBAL%20-%20BLOCK%20-%20Authentication%20Transfer.png)
+![IAC - GLOBAL - BLOCK - Authentication Transfer](Documentation/IAC%20-%20GLOBAL%20-%20BLOCK%20-%20Authentication%20Transfer/IAC%20-%20GLOBAL%20-%20BLOCK%20-%20Authentication%20Transfer.png)
 
 
 ---
@@ -325,7 +325,7 @@ Restricts access from device platforms that cannot satisfy CA grant controls —
 
 | Component | Value |
 |-----------|-------|
-| **Users** | All users (2 exclusions) |
+| **Users** | All users — exclude: SG-Entra-AUG-CAP-BreakglassAccounts |
 | **Cloud Apps** | All cloud apps |
 | **Conditions** | Platforms: all (exclude: android, iOS, windows, macOS), Client apps: all |
 | **Grant Controls** | 🚫 Block access |
@@ -338,7 +338,7 @@ Restricts access from device platforms that cannot satisfy CA grant controls —
 - [INFO]  Break-glass group excluded ✓
 
 
-![IAC - GLOBAL - BLOCK - Unsupported Device Platforms](IAC%20-%20GLOBAL%20-%20BLOCK%20-%20Unsupported%20Device%20Platforms/IAC%20-%20GLOBAL%20-%20BLOCK%20-%20Unsupported%20Device%20Platforms.png)
+![IAC - GLOBAL - BLOCK - Unsupported Device Platforms](Documentation/IAC%20-%20GLOBAL%20-%20BLOCK%20-%20Unsupported%20Device%20Platforms/IAC%20-%20GLOBAL%20-%20BLOCK%20-%20Unsupported%20Device%20Platforms.png)
 
 
 ---
@@ -357,7 +357,7 @@ Allows break-glass accounts to authenticate only from trusted network locations.
 
 | Component | Value |
 |-----------|-------|
-| **Users** | 1 specific user/group/role targets |
+| **Users** | Include: Breakglass01 — Exclude: Breakglass02, SG-Entra-AUG-CAP-BreakglassAccounts |
 | **Cloud Apps** | All cloud apps |
 | **Conditions** | Locations: All locations, Exclude locations: IAC - Trusted Locations (IP), Client apps: all |
 | **Grant Controls** | 🛡️ Auth strength: Modern MFA + TAP |
@@ -372,7 +372,7 @@ Allows break-glass accounts to authenticate only from trusted network locations.
 - [MEDIUM]  Break-glass group not excluded (report-only policy)
 
 
-![IAC - GLOBAL - GRANT - BreakGlass - TrustedLocations](IAC%20-%20GLOBAL%20-%20GRANT%20-%20BreakGlass%20-%20TrustedLocations/IAC%20-%20GLOBAL%20-%20GRANT%20-%20BreakGlass%20-%20TrustedLocations.png)
+![IAC - GLOBAL - GRANT - BreakGlass - TrustedLocations](Documentation/IAC%20-%20GLOBAL%20-%20GRANT%20-%20BreakGlass%20-%20TrustedLocations/IAC%20-%20GLOBAL%20-%20GRANT%20-%20BreakGlass%20-%20TrustedLocations.png)
 
 
 ---
@@ -387,13 +387,18 @@ Allows break-glass accounts to authenticate only from trusted network locations.
 
 Requires MFA completion before users can register new security information (passkeys, authenticator app, FIDO2 keys). Prevents an attacker who has stolen a password from registering their own MFA methods. Enforces the registration process through a secure, authenticated path.
 
+This policy targets `urn:user:registersecurityinfo` — the user action that fires when a user visits aka.ms/mysecurityinfo to register passkeys, Authenticator app, FIDO2 keys, or phone numbers. This is distinct from `urn:user:registerdevice` (device join/enrollment), which is covered separately by the INTUNE - Device Registration policy. Getting this distinction wrong leaves MFA method registration completely unprotected.
+
+> **Note (July 2026):** Starting July 6, 2026, Register security information policies are evaluated during Windows Hello for Business and macOS Platform SSO credential registration. Previously those flows bypassed this action.
+> 📖 [Target resources — User actions](https://learn.microsoft.com/en-us/entra/identity/conditional-access/concept-conditional-access-cloud-apps#user-actions)
+
 ## Policy Configuration
 
 | Component | Value |
 |-----------|-------|
-| **Users** | 1 specific user/group/role targets |
-| **Cloud Apps** | User actions: urn:user:registerdevice |
-| **Conditions** | Platforms: iOS (exclude: macOS, windows), Client apps: all |
+| **Users** | SG-Entra-AUG-MFA-AuthPasskey (`bf1e4c1f-67fe-4971-8d2a-90259c471352`) — included |
+| **Cloud Apps** | User actions: urn:user:registersecurityinfo |
+| **Conditions** | Client apps: all |
 | **Grant Controls** | 🛡️ Auth strength: Modern MFA + TAP |
 | **Session Controls** | — |
 
@@ -401,11 +406,11 @@ Requires MFA completion before users can register new security information (pass
 
 - ID: 30a1edce-e832-456b-b2c5-4b1098d3a9b3
 - [INFO]  Policy is in report-only mode
-- [HIGH]  Platform condition only targets iOS — user-agent spoofing risk
 - [INFO]  Break-glass group excluded ✓
+- [INFO]  User action updated to registersecurityinfo — protects passkey/Authenticator registration as intended
 
 
-![IAC - GLOBAL - GRANT - MFA-Passkey - UserRegistration](IAC%20-%20GLOBAL%20-%20GRANT%20-%20MFA-Passkey%20-%20UserRegistration/IAC%20-%20GLOBAL%20-%20GRANT%20-%20MFA-Passkey%20-%20UserRegistration.png)
+![IAC - GLOBAL - GRANT - MFA-Passkey - UserRegistration](Documentation/IAC%20-%20GLOBAL%20-%20GRANT%20-%20MFA-Passkey%20-%20UserRegistration/IAC%20-%20GLOBAL%20-%20GRANT%20-%20MFA-Passkey%20-%20UserRegistration.png)
 
 
 ---
@@ -424,7 +429,7 @@ Requires admin-role users to authenticate using a passkey (FIDO2 or device-bound
 
 | Component | Value |
 |-----------|-------|
-| **Users** | 1 specific user/group/role targets |
+| **Users** | Include: SG-Entra-DUG-Admins-AllAdminUsers — Exclude: SG-Entra-AUG-CAP-BreakglassAccounts |
 | **Cloud Apps** | All cloud apps |
 | **Conditions** | Client apps: all |
 | **Grant Controls** | 🛡️ Auth strength: Modern MFA + TAP |
@@ -437,7 +442,7 @@ Requires admin-role users to authenticate using a passkey (FIDO2 or device-bound
 - [INFO]  Break-glass group excluded ✓
 
 
-![IAC - GLOBAL - GRANT - MFA-Passkeys - ADM-Users](IAC%20-%20GLOBAL%20-%20GRANT%20-%20MFA-Passkeys%20-%20ADM-Users/IAC%20-%20GLOBAL%20-%20GRANT%20-%20MFA-Passkeys%20-%20ADM-Users.png)
+![IAC - GLOBAL - GRANT - MFA-Passkeys - ADM-Users](Documentation/IAC%20-%20GLOBAL%20-%20GRANT%20-%20MFA-Passkeys%20-%20ADM-Users/IAC%20-%20GLOBAL%20-%20GRANT%20-%20MFA-Passkeys%20-%20ADM-Users.png)
 
 
 ---
@@ -456,7 +461,7 @@ Cryptographically binds access tokens to the specific Windows device that authen
 
 | Component | Value |
 |-----------|-------|
-| **Users** | All users (2 exclusions) |
+| **Users** | All users — exclude: SG-Entra-AUG-CAP-BreakglassAccounts |
 | **Cloud Apps** | Office 365 Exchange Online, Office 365 SharePoint Online, Windows 365, Azure Virtual Desktop, Microsoft Teams Services |
 | **Conditions** | Platforms: windows, Client apps: mobileAppsAndDesktopClients, Device filter: device.systemLabels -contains "CloudPC" -and device.trustType -eq "AzureAD" |
 | **Grant Controls** | — |
@@ -469,7 +474,7 @@ Cryptographically binds access tokens to the specific Windows device that authen
 - [INFO]  Break-glass group excluded ✓
 
 
-![IAC - GLOBAL - SESSION - Windows - TokenProtection](IAC%20-%20GLOBAL%20-%20SESSION%20-%20Windows%20-%20TokenProtection/IAC%20-%20GLOBAL%20-%20SESSION%20-%20Windows%20-%20TokenProtection.png)
+![IAC - GLOBAL - SESSION - Windows - TokenProtection](Documentation/IAC%20-%20GLOBAL%20-%20SESSION%20-%20Windows%20-%20TokenProtection/IAC%20-%20GLOBAL%20-%20SESSION%20-%20Windows%20-%20TokenProtection.png)
 
 
 ---
@@ -488,7 +493,7 @@ Blocks sign-in for non-interactive service accounts (members of CA-ServiceAccoun
 
 | Component | Value |
 |-----------|-------|
-| **Users** | 1 specific user/group/role targets |
+| **Users** | Include: SG-NHI-AUG-ServiceAccounts-All + Directory Sync Accounts role — Exclude: SG-Entra-AUG-CAP-BreakglassAccounts |
 | **Cloud Apps** | All cloud apps |
 | **Conditions** | Locations: All locations, Exclude locations: IAC - Trusted Locations (IP), Client apps: all |
 | **Grant Controls** | 🚫 Block access |
@@ -503,7 +508,7 @@ Blocks sign-in for non-interactive service accounts (members of CA-ServiceAccoun
 - [INFO]  Break-glass group excluded ✓
 
 
-![IAC - GLOBAL – BLOCK – Service Accounts](IAC%20-%20GLOBAL%20–%20BLOCK%20–%20Service%20Accounts/IAC%20-%20GLOBAL%20–%20BLOCK%20–%20Service%20Accounts.png)
+![IAC - GLOBAL – BLOCK – Service Accounts](Documentation/IAC%20-%20GLOBAL%20–%20BLOCK%20–%20Service%20Accounts/IAC%20-%20GLOBAL%20–%20BLOCK%20–%20Service%20Accounts.png)
 
 
 ---
@@ -522,7 +527,7 @@ Sets a 4-hour sign-in frequency for all admin-role users. After 4 hours of inact
 
 | Component | Value |
 |-----------|-------|
-| **Users** | 11 specific user/group/role targets |
+| **Users** | 46 directory roles — exclude: SG-Entra-AUG-CAP-BreakglassAccounts |
 | **Cloud Apps** | All cloud apps |
 | **Conditions** | Client apps: browser |
 | **Grant Controls** | — |
@@ -534,7 +539,7 @@ Sets a 4-hour sign-in frequency for all admin-role users. After 4 hours of inact
 - [INFO]  Break-glass group excluded ✓
 
 
-![IAC - GLOBAL – SESSION – Admin Persistence (4 Hours)](IAC%20-%20GLOBAL%20–%20SESSION%20–%20Admin%20Persistence%20(4%20Hours)/IAC%20-%20GLOBAL%20–%20SESSION%20–%20Admin%20Persistence%20(4%20Hours).png)
+![IAC - GLOBAL – SESSION – Admin Persistence (4 Hours)](Documentation/IAC%20-%20GLOBAL%20–%20SESSION%20–%20Admin%20Persistence%20(4%20Hours)/IAC%20-%20GLOBAL%20–%20SESSION%20–%20Admin%20Persistence%20(4%20Hours).png)
 
 
 ---
@@ -553,7 +558,7 @@ Sets sign-in frequency to 9-12 hours for all licensed internal users. Balances s
 
 | Component | Value |
 |-----------|-------|
-| **Users** | All users (2 exclusions) |
+| **Users** | All users — exclude: SG-Entra-AUG-CAP-BreakglassAccounts |
 | **Cloud Apps** | All cloud apps |
 | **Conditions** | Client apps: browser |
 | **Grant Controls** | — |
@@ -566,7 +571,7 @@ Sets sign-in frequency to 9-12 hours for all licensed internal users. Balances s
 - [INFO]  Break-glass group excluded ✓
 
 
-![IAC - GLOBAL – SESSION – All Users Persistence (9-12 Hours)](IAC%20-%20GLOBAL%20–%20SESSION%20–%20All%20Users%20Persistence%20(9-12%20Hours)/IAC%20-%20GLOBAL%20–%20SESSION%20–%20All%20Users%20Persistence%20(9-12%20Hours).png)
+![IAC - GLOBAL – SESSION – All Users Persistence (9-12 Hours)](Documentation/IAC%20-%20GLOBAL%20–%20SESSION%20–%20All%20Users%20Persistence%20(9-12%20Hours)/IAC%20-%20GLOBAL%20–%20SESSION%20–%20All%20Users%20Persistence%20(9-12%20Hours).png)
 
 
 ---
@@ -585,7 +590,7 @@ Blocks access to SharePoint Online and OneDrive from network locations not liste
 
 | Component | Value |
 |-----------|-------|
-| **Users** | All users (4 exclusions) |
+| **Users** | All users — exclude: SG-Entra-AUG-CAP-BreakglassAccounts, SG-NHI-AUG-ServiceAccounts-All, SG-Entra-AUG-CAP-GuestExclusions, SG-Entra-AUG-CAP-TravelingUsers |
 | **Cloud Apps** | Office 365 SharePoint Online |
 | **Conditions** | Locations: All locations, Exclude locations: All trusted locations, Client apps: all |
 | **Grant Controls** | 🚫 Block access |
@@ -599,7 +604,7 @@ Blocks access to SharePoint Online and OneDrive from network locations not liste
 - [INFO]  Break-glass group excluded ✓
 
 
-![IAC - APP - BLOCK - SharePoint-OneDrive-NonTrustedLocations](IAC%20-%20APP%20-%20BLOCK%20-%20SharePoint-OneDrive-NonTrustedLocations/IAC%20-%20APP%20-%20BLOCK%20-%20SharePoint-OneDrive-NonTrustedLocations.png)
+![IAC - APP - BLOCK - SharePoint-OneDrive-NonTrustedLocations](Documentation/IAC%20-%20APP%20-%20BLOCK%20-%20SharePoint-OneDrive-NonTrustedLocations/IAC%20-%20APP%20-%20BLOCK%20-%20SharePoint-OneDrive-NonTrustedLocations.png)
 
 
 ---
@@ -618,7 +623,7 @@ Requires MFA to access the Inforcer application specifically. Ensures that the m
 
 | Component | Value |
 |-----------|-------|
-| **Users** | All users (2 exclusions) |
+| **Users** | All users — exclude: SG-Entra-AUG-CAP-BreakglassAccounts |
 | **Cloud Apps** | Inforcer Integration |
 | **Conditions** | Locations: All locations, Client apps: all |
 | **Grant Controls** | ✅ Require MFA |
@@ -631,7 +636,7 @@ Requires MFA to access the Inforcer application specifically. Ensures that the m
 - [INFO]  Break-glass group excluded ✓
 
 
-![IAC - APP - inforcer - RequireMFA](IAC%20-%20APP%20-%20inforcer%20-%20RequireMFA/IAC%20-%20APP%20-%20inforcer%20-%20RequireMFA.png)
+![IAC - APP - inforcer - RequireMFA](Documentation/IAC%20-%20APP%20-%20inforcer%20-%20RequireMFA/IAC%20-%20APP%20-%20inforcer%20-%20RequireMFA.png)
 
 
 ---
@@ -650,7 +655,7 @@ Blocks access to Azure Virtual Desktop for users not in the AllowedAVDUsers grou
 
 | Component | Value |
 |-----------|-------|
-| **Users** | All users (4 exclusions) |
+| **Users** | All users — exclude: SG-Entra-AUG-CAP-BreakglassAccounts, SG-Intune-AUG-AVD-Prod-Users, SG-Intune-AUG-AVD-Prod-ExternalUsers |
 | **Cloud Apps** | Windows 365, Azure Virtual Desktop |
 | **Conditions** | Client apps: all |
 | **Grant Controls** | 🚫 Block access |
@@ -663,7 +668,7 @@ Blocks access to Azure Virtual Desktop for users not in the AllowedAVDUsers grou
 - [INFO]  Break-glass group excluded ✓
 
 
-![IAC - APP – BLOCK – AVD - Exclude - AllowedAVDUsers](IAC%20-%20APP%20–%20BLOCK%20–%20AVD%20-%20Exclude%20-%20AllowedAVDUsers/IAC%20-%20APP%20–%20BLOCK%20–%20AVD%20-%20Exclude%20-%20AllowedAVDUsers.png)
+![IAC - APP – BLOCK – AVD - Exclude - AllowedAVDUsers](Documentation/IAC%20-%20APP%20–%20BLOCK%20–%20AVD%20-%20Exclude%20-%20AllowedAVDUsers/IAC%20-%20APP%20–%20BLOCK%20–%20AVD%20-%20Exclude%20-%20AllowedAVDUsers.png)
 
 
 ---
@@ -682,7 +687,7 @@ Blocks AVD access from non-trusted network locations even for authorized AVD use
 
 | Component | Value |
 |-----------|-------|
-| **Users** | All users (3 exclusions) |
+| **Users** | All users — exclude: SG-Entra-AUG-CAP-BreakglassAccounts, SG-Intune-AUG-AVD-Prod-ExternalUsers |
 | **Cloud Apps** | Windows 365, Azure Virtual Desktop |
 | **Conditions** | Locations: All locations, Exclude locations: All trusted locations, Client apps: all |
 | **Grant Controls** | 🚫 Block access |
@@ -696,7 +701,7 @@ Blocks AVD access from non-trusted network locations even for authorized AVD use
 - [INFO]  Break-glass group excluded ✓
 
 
-![IAC - APP – BLOCK – AVD - NonTrustedLocations](IAC%20-%20APP%20–%20BLOCK%20–%20AVD%20-%20NonTrustedLocations/IAC%20-%20APP%20–%20BLOCK%20–%20AVD%20-%20NonTrustedLocations.png)
+![IAC - APP – BLOCK – AVD - NonTrustedLocations](Documentation/IAC%20-%20APP%20–%20BLOCK%20–%20AVD%20-%20NonTrustedLocations/IAC%20-%20APP%20–%20BLOCK%20–%20AVD%20-%20NonTrustedLocations.png)
 
 
 ---
@@ -715,9 +720,9 @@ Blocks sign-in for AI agent identities assessed as high-risk by Entra Identity P
 
 | Component | Value |
 |-----------|-------|
-| **Users** | 1 specific user/group/role targets |
+| **Users** | None (agent identity target — no user exclusions) |
 | **Cloud Apps** | All cloud apps |
-| **Conditions** | Client apps: all |
+| **Conditions** | Client apps: all, agentIdRiskLevels: high |
 | **Grant Controls** | 🚫 Block access |
 | **Session Controls** | — |
 
@@ -728,7 +733,7 @@ Blocks sign-in for AI agent identities assessed as high-risk by Entra Identity P
 - [MEDIUM]  Break-glass group not excluded (report-only policy)
 
 
-![IAC - AGENT - BLOCK - HighRiskAgent](IAC%20-%20AGENT%20-%20BLOCK%20-%20HighRiskAgent/IAC%20-%20AGENT%20-%20BLOCK%20-%20HighRiskAgent.png)
+![IAC - AGENT - BLOCK - HighRiskAgent](Documentation/IAC%20-%20AGENT%20-%20BLOCK%20-%20HighRiskAgent/IAC%20-%20AGENT%20-%20BLOCK%20-%20HighRiskAgent.png)
 
 
 ---
@@ -747,9 +752,9 @@ Blocks sign-in for AI agent identities that are not in the approved/trusted agen
 
 | Component | Value |
 |-----------|-------|
-| **Users** | 1 specific user/group/role targets |
+| **Users** | None (agent identity target — no user exclusions) |
 | **Cloud Apps** | All cloud apps |
-| **Conditions** | Client apps: all |
+| **Conditions** | Client apps: all, Agent filter: exclude `ConditionalAccessTaggedAgents_policyRequirement -contains "ApprovedAgent"` |
 | **Grant Controls** | 🚫 Block access |
 | **Session Controls** | — |
 
@@ -760,7 +765,7 @@ Blocks sign-in for AI agent identities that are not in the approved/trusted agen
 - [MEDIUM]  Break-glass group not excluded (report-only policy)
 
 
-![IAC - AGENT - BLOCK - NonTrustedAgents](IAC%20-%20AGENT%20-%20BLOCK%20-%20NonTrustedAgents/IAC%20-%20AGENT%20-%20BLOCK%20-%20NonTrustedAgents.png)
+![IAC - AGENT - BLOCK - NonTrustedAgents](Documentation/IAC%20-%20AGENT%20-%20BLOCK%20-%20NonTrustedAgents/IAC%20-%20AGENT%20-%20BLOCK%20-%20NonTrustedAgents.png)
 
 
 ---
@@ -779,7 +784,7 @@ Requires devices to be marked as compliant in Microsoft Intune before accessing 
 
 | Component | Value |
 |-----------|-------|
-| **Users** | All users (3 exclusions) |
+| **Users** | All users — exclude: SG-Entra-AUG-CAP-BreakglassAccounts, SG-Entra-ADG-CAP-DeviceExclusions |
 | **Cloud Apps** | All cloud apps |
 | **Conditions** | Locations: All locations, Exclude locations: All trusted locations, Client apps: all |
 | **Grant Controls** | 📱 Require compliant device OR 💻 Require hybrid Azure AD joined |
@@ -795,7 +800,7 @@ Requires devices to be marked as compliant in Microsoft Intune before accessing 
 - [HIGH]  Policy uses "All trusted locations" but 5 location(s) are NOT trusted
 
 
-![IAC - INTUNE - GRANT - RequireCompliantDevice](IAC%20-%20INTUNE%20-%20GRANT%20-%20RequireCompliantDevice/IAC%20-%20INTUNE%20-%20GRANT%20-%20RequireCompliantDevice.png)
+![IAC - INTUNE - GRANT - RequireCompliantDevice](Documentation/IAC%20-%20INTUNE%20-%20GRANT%20-%20RequireCompliantDevice/IAC%20-%20INTUNE%20-%20GRANT%20-%20RequireCompliantDevice.png)
 
 
 ---
@@ -808,17 +813,33 @@ Requires devices to be marked as compliant in Microsoft Intune before accessing 
 
 ## Intent
 
-Requires an authentication strength (Modern MFA + TAP) before a device can be registered with Entra ID (urn:user:registerdevice). Replaces the prior location-restricted version of this policy, which relied on trusted-location conditions that are silently not evaluated by the Device Registration Service.
+Requires an authentication strength before a device can be registered with Entra ID (urn:user:registerdevice). Replaces the prior location-restricted version of this policy, which relied on trusted-location conditions that are silently not evaluated by the Device Registration Service.
 
-The Device Registration Service (`01cb2876-7ebd-4aa4-9cc9-d28bd4d359a9`) only supports "Require multifactor authentication" as a grant control. Location, compliant-device, and hybrid-joined conditions are not evaluated for this service even though the Entra portal allows configuring them without error - the policy will appear to save successfully but those conditions have no effect on device registration. This was documented and MSRC-confirmed in research published by Fabian Bader (Cloudbrothers) following joint work with Dirk-jan Mollema at TROOPERS25 (VULN-153600).
+The Device Registration Service (`01cb2876-7ebd-4aa4-9cc9-d28bd4d359a9`) only supports "Require multifactor authentication" as a grant control. Location, compliant-device, and hybrid-joined conditions are not evaluated for this service even though the Entra portal allows configuring them without error — the policy will appear to save successfully but those conditions have no effect on device registration. This was documented and MSRC-confirmed in research published by Fabian Bader (Cloudbrothers) following joint work with Dirk-jan Mollema at TROOPERS25 (VULN-153600).
+
+**Auth strength choice — Modern MFA + TAP vs plain Require MFA:**
+
+Microsoft explicitly documents that Windows Hello for Business and device-bound passkeys cannot satisfy an auth strength requirement at device registration time, because the device does not yet exist in Entra ID when the register device action fires:
+
+> *"Windows Hello for Business and device-bound passkeys aren't supported because those scenarios require the device to be already registered."*
+
+This means users enrolling a new device will need a TAP, software OATH token, Authenticator push, SMS, or certificate — not WHfB or a device-bound passkey.
+
+**Modern MFA + TAP (current setting)** is the right choice for security-conscious organisations: it gates device registration behind a strong, org-issued second factor and makes TAP the bootstrap path for net-new users who have no prior MFA method. IT issues a TAP at onboarding; the user consumes it to join their device; the TAP expires.
+
+**Plain Require MFA** is the simpler alternative for broader deployment: it accepts any MFA method the user already has (Authenticator push, SMS, voice, OATH) without requiring TAP infrastructure. This removes the onboarding dependency on TAP issuance but is a weaker gate — SMS and voice satisfy it. Appropriate when the primary goal is coverage rather than bootstrap control.
+
+**TAP and admin access (related consideration):** TAP satisfies Modern MFA + TAP strength everywhere it appears — including admin CA policies and PIM activation. If those policies also use Modern MFA + TAP, a multi-use TAP issued for device enrollment would be sufficient to activate admin roles for its full validity window. For high-security environments, admin and PIM policies should use a phishing-resistant strength (WHfB, FIDO2, CBA only) that excludes TAP, so TAP stays scoped to onboarding flows.
 
 > 📖 [Conditional Access: Target resources - Device registration](https://learn.microsoft.com/en-us/entra/identity/conditional-access/concept-conditional-access-cloud-apps)
+> 📖 [Require MFA for device registration](https://learn.microsoft.com/en-us/entra/identity/conditional-access/how-to-policy-mfa-device-registration)
+> 📖 [Authentication strengths](https://learn.microsoft.com/en-us/entra/identity/authentication/concept-authentication-strengths)
 
 ## Policy Configuration
 
 | Component | Value |
 |-----------|-------|
-| **Users** | All users (4 exclusions) |
+| **Users** | All users — exclude: SG-Entra-AUG-CAP-BreakglassAccounts, SG-Entra-ADG-CAP-DeviceExclusions |
 | **Cloud Apps** | User actions: urn:user:registerdevice |
 | **Conditions** | Client apps: all |
 | **Grant Controls** | 🛡️ Auth strength: Modern MFA + TAP |
@@ -832,7 +853,7 @@ The Device Registration Service (`01cb2876-7ebd-4aa4-9cc9-d28bd4d359a9`) only su
 - [INFO]  Replaces prior location-based version - Device Registration Service only enforces MFA, not location/compliance conditions
 
 
-![IAC - INTUNE - GRANT - Device Registration - MFA Strength](IAC%20-%20INTUNE%20–%20GRANT%20–%20Device%20Registration%20-%20MFA%20Strength/IAC%20-%20INTUNE%20–%20GRANT%20–%20Device%20Registration%20-%20MFA%20Strength.png)
+![IAC - INTUNE - GRANT - Device Registration - MFA Strength](Documentation/IAC%20-%20INTUNE%20–%20GRANT%20–%20Device%20Registration%20-%20MFA%20Strength/IAC%20-%20INTUNE%20–%20GRANT%20–%20Device%20Registration%20-%20MFA%20Strength.png)
 
 
 ---
@@ -851,7 +872,7 @@ Blocks access to Microsoft admin portals (Azure Portal, Entra Admin Center, Intu
 
 | Component | Value |
 |-----------|-------|
-| **Users** | All users (3 exclusions) |
+| **Users** | All users — exclude: SG-Entra-AUG-CAP-BreakglassAccounts, SG-Entra-DUG-Admins-AllAdminUsers |
 | **Cloud Apps** | Inforcer Integration, Azure Resource Manager, MicrosoftAdminPortals, Microsoft Purview Platform, My Staff |
 | **Conditions** | Client apps: all |
 | **Grant Controls** | 🚫 Block access |
@@ -866,7 +887,7 @@ Blocks access to Microsoft admin portals (Azure Portal, Entra Admin Center, Intu
 - [INFO]  Break-glass group excluded ✓
 
 
-![IAC - ZTCA - GLOBAL – BLOCK – Admin Portal](IAC%20-%20ZTCA%20-%20GLOBAL%20–%20BLOCK%20–%20Admin%20Portal/IAC%20-%20ZTCA%20-%20GLOBAL%20–%20BLOCK%20–%20Admin%20Portal.png)
+![IAC - ZTCA - GLOBAL – BLOCK – Admin Portal](Documentation/IAC%20-%20ZTCA%20-%20GLOBAL%20–%20BLOCK%20–%20Admin%20Portal/IAC%20-%20ZTCA%20-%20GLOBAL%20–%20BLOCK%20–%20Admin%20Portal.png)
 
 
 ---
@@ -885,7 +906,7 @@ Zero Trust CA policy that blocks all app access from devices that are not Intune
 
 | Component | Value |
 |-----------|-------|
-| **Users** | All users (2 exclusions) |
+| **Users** | All users — exclude: SG-Entra-AUG-CAP-BreakglassAccounts |
 | **Cloud Apps** | All cloud apps |
 | **Conditions** | Locations: All locations, Exclude locations: All trusted locations, Client apps: all, Device filter: device.isCompliant -eq True -or device.trustType -eq "ServerAD" -or device.trustType -eq "Workplace" |
 | **Grant Controls** | 🚫 Block access |
@@ -901,7 +922,7 @@ Zero Trust CA policy that blocks all app access from devices that are not Intune
 - [INFO]  Break-glass group excluded ✓
 
 
-![IAC - ZTCA - INTUNE - BLOCK - AllApps - ExcludeTrustedLocation](IAC%20-%20ZTCA%20-%20INTUNE%20-%20BLOCK%20-%20AllApps%20-%20ExcludeTrustedLocation/IAC%20-%20ZTCA%20-%20INTUNE%20-%20BLOCK%20-%20AllApps%20-%20ExcludeTrustedLocation.png)
+![IAC - ZTCA - INTUNE - BLOCK - AllApps - ExcludeTrustedLocation](Documentation/IAC%20-%20ZTCA%20-%20INTUNE%20-%20BLOCK%20-%20AllApps%20-%20ExcludeTrustedLocation/IAC%20-%20ZTCA%20-%20INTUNE%20-%20BLOCK%20-%20AllApps%20-%20ExcludeTrustedLocation.png)
 
 
 ---
@@ -920,7 +941,7 @@ Zero Trust CA policy that blocks all cloud app access by default, with only expl
 
 | Component | Value |
 |-----------|-------|
-| **Users** | All users (3 exclusions) |
+| **Users** | All users — exclude: SG-Entra-AUG-CAP-BreakglassAccounts |
 | **Cloud Apps** | All cloud apps |
 | **Conditions** | Client apps: all |
 | **Grant Controls** | 🚫 Block access |
@@ -933,7 +954,7 @@ Zero Trust CA policy that blocks all cloud app access by default, with only expl
 - [INFO]  Break-glass group excluded ✓
 
 
-![IAC- ZTCA - GLOBAL - BLOCK - AllApps -Exclude CA-Global](IAC-%20ZTCA%20-%20GLOBAL%20-%20BLOCK%20-%20AllApps%20-Exclude%20CA-Global/IAC-%20ZTCA%20-%20GLOBAL%20-%20BLOCK%20-%20AllApps%20-Exclude%20CA-Global.png)
+![IAC- ZTCA - GLOBAL - BLOCK - AllApps -Exclude CA-Global](Documentation/IAC-%20ZTCA%20-%20GLOBAL%20-%20BLOCK%20-%20AllApps%20-Exclude%20CA-Global/IAC-%20ZTCA%20-%20GLOBAL%20-%20BLOCK%20-%20AllApps%20-Exclude%20CA-Global.png)
 
 
 ---
@@ -952,7 +973,7 @@ Applies session timeout controls to Office 365 applications. Configures sign-in 
 
 | Component | Value |
 |-----------|-------|
-| **Users** | All users (1 exclusions) |
+| **Users** | All users — exclude: SG-Entra-AUG-CAP-BreakglassAccounts |
 | **Cloud Apps** | Office365 |
 | **Conditions** | Platforms: all (exclude: android, iOS, macOS, linux), Client apps: browser, Device filter: device.isCompliant -eq True -and device.trustType -eq "ServerAD" |
 | **Grant Controls** | — |
@@ -965,7 +986,7 @@ Applies session timeout controls to Office 365 applications. Configures sign-in 
 - [INFO]  Break-glass group excluded ✓
 
 
-![IAC - APP - SESSION - O365 - Timeoutsettings](IAC%20-%20APP%20-%20SESSION%20-%20O365%20-%20Timeoutsettings/IAC%20-%20APP%20-%20SESSION%20-%20O365%20-%20Timeoutsettings.png)
+![IAC - APP - SESSION - O365 - Timeoutsettings](Documentation/IAC%20-%20APP%20-%20SESSION%20-%20O365%20-%20Timeoutsettings/IAC%20-%20APP%20-%20SESSION%20-%20O365%20-%20Timeoutsettings.png)
 
 
 ---
@@ -984,7 +1005,7 @@ Requires MFA re-authentication and password change for sign-ins Entra Identity P
 
 | Component | Value |
 |-----------|-------|
-| **Users** | All users (1 exclusions) |
+| **Users** | All users — exclude: SG-Entra-AUG-CAP-BreakglassAccounts |
 | **Cloud Apps** | All cloud apps |
 | **Conditions** | Sign-in risk: high, Client apps: all |
 | **Grant Controls** | 🛡️ Auth strength: Modern MFA + TAP |
@@ -997,7 +1018,7 @@ Requires MFA re-authentication and password change for sign-ins Entra Identity P
 - [INFO]  Break-glass group excluded ✓
 
 
-![IAC - P2 - GLOBAL - GRANT - High-Risk Sign-Ins](IAC%20-%20P2%20-%20GLOBAL%20-%20GRANT%20-%20High-Risk%20Sign-Ins/IAC%20-%20P2%20-%20GLOBAL%20-%20GRANT%20-%20High-Risk%20Sign-Ins.png)
+![IAC - P2 - GLOBAL - GRANT - High-Risk Sign-Ins](Documentation/IAC%20-%20P2%20-%20GLOBAL%20-%20GRANT%20-%20High-Risk%20Sign-Ins/IAC%20-%20P2%20-%20GLOBAL%20-%20GRANT%20-%20High-Risk%20Sign-Ins.png)
 
 
 ---
@@ -1016,7 +1037,7 @@ Requires MFA for sign-ins assessed as medium-risk by Entra Identity Protection. 
 
 | Component | Value |
 |-----------|-------|
-| **Users** | All users (1 exclusions) |
+| **Users** | All users — exclude: SG-Entra-AUG-CAP-BreakglassAccounts |
 | **Cloud Apps** | All cloud apps |
 | **Conditions** | Sign-in risk: medium, Client apps: all |
 | **Grant Controls** | ✅ Require MFA |
@@ -1029,7 +1050,7 @@ Requires MFA for sign-ins assessed as medium-risk by Entra Identity Protection. 
 - [INFO]  Break-glass group excluded ✓
 
 
-![IAC - P2 - GLOBAL - GRANT - Medium-Risk Sign-Ins](IAC%20-%20P2%20-%20GLOBAL%20-%20GRANT%20-%20Medium-Risk%20Sign-Ins/IAC%20-%20P2%20-%20GLOBAL%20-%20GRANT%20-%20Medium-Risk%20Sign-Ins.png)
+![IAC - P2 - GLOBAL - GRANT - Medium-Risk Sign-Ins](Documentation/IAC%20-%20P2%20-%20GLOBAL%20-%20GRANT%20-%20Medium-Risk%20Sign-Ins/IAC%20-%20P2%20-%20GLOBAL%20-%20GRANT%20-%20Medium-Risk%20Sign-Ins.png)
 
 
 ---
@@ -1048,7 +1069,7 @@ Blocks high-risk and medium-risk users from registering new security information
 
 | Component | Value |
 |-----------|-------|
-| **Users** | All users (1 exclusions) |
+| **Users** | All users — exclude: SG-Entra-AUG-CAP-BreakglassAccounts |
 | **Cloud Apps** | User actions: urn:user:registersecurityinfo |
 | **Conditions** | User risk: high, medium, Client apps: all |
 | **Grant Controls** | 🚫 Block access |
@@ -1061,7 +1082,7 @@ Blocks high-risk and medium-risk users from registering new security information
 - [INFO]  Break-glass group excluded ✓
 
 
-![IAC - P2 - GLOBAL - BLOCK - RiskyUsers - RegisterSecurityInfo](IAC%20-%20P2%20-%20GLOBAL%20-%20BLOCK%20-%20RiskyUsers%20-%20RegisterSecurityInfo/IAC%20-%20P2%20-%20GLOBAL%20-%20BLOCK%20-%20RiskyUsers%20-%20RegisterSecurityInfo.png)
+![IAC - P2 - GLOBAL - BLOCK - RiskyUsers - RegisterSecurityInfo](Documentation/IAC%20-%20P2%20-%20GLOBAL%20-%20BLOCK%20-%20RiskyUsers%20-%20RegisterSecurityInfo/IAC%20-%20P2%20-%20GLOBAL%20-%20BLOCK%20-%20RiskyUsers%20-%20RegisterSecurityInfo.png)
 
 
 ---
@@ -1080,8 +1101,8 @@ Requires reauthentication (authentication context c1 — PIM-ReAuthentication) w
 
 | Component | Value |
 |-----------|-------|
-| **Users** | All users (1 exclusions) |
-| **Cloud Apps** | — |
+| **Users** | All users — exclude: SG-Entra-AUG-CAP-BreakglassAccounts |
+| **Cloud Apps** | Auth context: c1 (PIM-ReAuthentication) |
 | **Conditions** | Client apps: all |
 | **Grant Controls** | 🛡️ Auth strength: Modern MFA + TAP |
 | **Session Controls** | Sign-in frequency: null null |
@@ -1093,7 +1114,7 @@ Requires reauthentication (authentication context c1 — PIM-ReAuthentication) w
 - [INFO]  Break-glass group excluded ✓
 
 
-![IAC - P2 - APP - SESSION - PIM - Reauthentication](IAC%20-%20P2%20-%20APP%20-%20SESSION%20-%20PIM%20-%20Reauthentication/IAC%20-%20P2%20-%20APP%20-%20SESSION%20-%20PIM%20-%20Reauthentication.png)
+![IAC - P2 - APP - SESSION - PIM - Reauthentication](Documentation/IAC%20-%20P2%20-%20APP%20-%20SESSION%20-%20PIM%20-%20Reauthentication/IAC%20-%20P2%20-%20APP%20-%20SESSION%20-%20PIM%20-%20Reauthentication.png)
 
 
 ---
@@ -1108,11 +1129,26 @@ Requires reauthentication (authentication context c1 — PIM-ReAuthentication) w
 
 Requires MFA for external B2B collaboration users (formal partner/guest accounts with a home tenant). Separate from the mixed-guest policy to allow different authentication strength requirements for formal B2B relationships vs ad hoc guests.
 
+**External user MFA strength constraints — read before enforcing:**
+
+Applying a custom authentication strength to external users (B2B members, direct connect users, service providers) requires careful consideration of what methods those users can actually satisfy. There are two resolution paths depending on your cross-tenant access settings:
+
+**If MFA trust is enabled** (resource tenant trusts home tenant MFA): The user completes MFA in their home tenant and the result is accepted. Phishing-resistant methods completed in the home tenant (FIDO2, WHfB, CBA) will satisfy even a phishing-resistant strength in your resource tenant. This is the recommended path for formal partner relationships.
+
+**If MFA trust is disabled** (user must complete MFA in your resource tenant): Only methods available in your tenant to external users apply — primarily Authenticator push, SMS, voice, and software OATH. FIDO2 keys, Windows Hello for Business, hardware OATH tokens, and certificate-based auth are **not available** to external users completing MFA in the resource tenant. TAP also does not work for guest users by design.
+
+**Service providers (GDAP/MSP partners)** are a special case: GDAP-connected MSP technicians always complete MFA in their home (partner) tenant and that MFA is always trusted in the resource tenant regardless of your cross-tenant access settings — this is enforced by the GDAP framework itself. Applying a strength that only includes methods unavailable to them in the resource tenant would not block them, but it is worth verifying your cross-tenant access settings explicitly cover partner tenants if you are using trust-based resolution.
+
+**Recommendation:** Before enabling enforcement, confirm cross-tenant access settings for each external user population in scope. If trust is not configured for partner organizations, consider switching the grant to plain Require MFA or creating a separate strength that only includes methods external users can satisfy (Authenticator push + SMS + voice + software OATH minimum).
+
+> 📖 [Authentication strengths for external users](https://learn.microsoft.com/en-us/entra/identity/authentication/concept-authentication-strengths#authentication-strengths-for-external-users)
+> 📖 [Cross-tenant access overview](https://learn.microsoft.com/en-us/entra/external-id/cross-tenant-access-overview)
+
 ## Policy Configuration
 
 | Component | Value |
 |-----------|-------|
-| **Users** | 0 specific user/group/role targets |
+| **Users** | Guest types: internalGuest, b2bCollaborationMember, b2bDirectConnectUser, serviceProvider — exclude: SG-Entra-AUG-CAP-BreakglassAccounts |
 | **Cloud Apps** | All cloud apps |
 | **Conditions** | Client apps: all |
 | **Grant Controls** | 🛡️ Auth strength: Modern MFA + TAP |
@@ -1125,7 +1161,7 @@ Requires MFA for external B2B collaboration users (formal partner/guest accounts
 - [MEDIUM]  Guest users required to satisfy Authentication strength: Modern MFA + TAP — may need Cross-Tenant Access Settings
 
 
-![IAC - GLOBAL - GRANT - MFA - B2B-Guest](IAC%20-%20GLOBAL%20-%20GRANT%20-%20MFA%20-%20B2B-Guest/IAC%20-%20GLOBAL%20-%20GRANT%20-%20MFA%20-%20B2B-Guest.png)
+![IAC - GLOBAL - GRANT - MFA - B2B-Guest](Documentation/IAC%20-%20GLOBAL%20-%20GRANT%20-%20MFA%20-%20B2B-Guest/IAC%20-%20GLOBAL%20-%20GRANT%20-%20MFA%20-%20B2B-Guest.png)
 
 
 ---
@@ -1144,7 +1180,7 @@ Requires MFA for all guest users including ad hoc guests without a formal home t
 
 | Component | Value |
 |-----------|-------|
-| **Users** | 0 specific user/group/role targets |
+| **Users** | Guest types: b2bCollaborationGuest, otherExternalUser — exclude: SG-Entra-AUG-CAP-BreakglassAccounts |
 | **Cloud Apps** | All cloud apps |
 | **Conditions** | Client apps: all |
 | **Grant Controls** | ✅ Require MFA |
@@ -1157,7 +1193,7 @@ Requires MFA for all guest users including ad hoc guests without a formal home t
 - [HIGH]  Guest users required to satisfy MFA — may need Cross-Tenant Access Settings
 
 
-![IAC - GLOBAL - GRANT - MFA - Mixed-Guests](IAC%20-%20GLOBAL%20-%20GRANT%20-%20MFA%20-%20Mixed-Guests/IAC%20-%20GLOBAL%20-%20GRANT%20-%20MFA%20-%20Mixed-Guests.png)
+![IAC - GLOBAL - GRANT - MFA - Mixed-Guests](Documentation/IAC%20-%20GLOBAL%20-%20GRANT%20-%20MFA%20-%20Mixed-Guests/IAC%20-%20GLOBAL%20-%20GRANT%20-%20MFA%20-%20Mixed-Guests.png)
 
 
 ---
@@ -1182,7 +1218,7 @@ This policy directly targets that resource, ensuring all token requests to Azure
 | Component | Value |
 |-----------|-------|
 | **Users** | All users |
-| **Excluded Users** | Break-glass group (`5628ad67-f9d1-4495-abe3-99dc8f9074f1`) |
+| **Excluded Users** | SG-Entra-AUG-CAP-BreakglassAccounts (`5628ad67-f9d1-4495-abe3-99dc8f9074f1`) |
 | **Cloud Apps** | Windows Azure Active Directory (`00000002-0000-0000-c000-000000000000`) |
 | **Conditions** | Client apps: all |
 | **Grant Controls** | ✅ Require authentication strength: Modern MFA + TAP |
@@ -1195,7 +1231,7 @@ This policy directly targets that resource, ensuring all token requests to Azure
 - [INFO]  Break-glass group excluded ✓
 - [INFO]  Closes Azure AD Graph directory scope gap for tenants with resource exclusions in All resources policies
 
-![IAC - GLOBAL - GRANT - MFA - WindowsAzureAD-BaselineScopes](IAC%20-%20GLOBAL%20-%20GRANT%20-%20MFA%20-%20WindowsAzureAD-BaselineScopes/IAC%20-%20GLOBAL%20-%20GRANT%20-%20MFA%20-%20WindowsAzureAD-BaselineScopes.png)
+![IAC - GLOBAL - GRANT - MFA - WindowsAzureAD-BaselineScopes](Documentation/IAC%20-%20GLOBAL%20-%20GRANT%20-%20MFA%20-%20WindowsAzureAD-BaselineScopes/IAC%20-%20GLOBAL%20-%20GRANT%20-%20MFA%20-%20WindowsAzureAD-BaselineScopes.png)
 
 
 ---
@@ -1220,7 +1256,7 @@ The EAM group is excluded and handled by a companion policy using built-in MFA i
 | Component | Value |
 |-----------|-------|
 | **Users** | All users |
-| **Excluded Groups** | Break-glass (`5628ad67`), EAM group (`8d0564e5`) |
+| **Excluded Groups** | SG-Entra-AUG-CAP-BreakglassAccounts (`5628ad67`), SG-Entra-AUG-MFA-AuthEAM (`8d0564e5`) |
 | **Cloud Apps** | All resources |
 | **Conditions** | User risk: High, Client apps: all |
 | **Grant Controls** | ✅ Auth strength: Modern MFA + TAP AND 🔑 Risk remediation |
@@ -1233,7 +1269,7 @@ The EAM group is excluded and handled by a companion policy using built-in MFA i
 - [INFO]  Break-glass group excluded ✓
 - [INFO]  EAM group excluded — covered by companion EAM policy
 
-![IAC - P2 - GLOBAL - GRANT - High-Risk Users - Risk Remediation](IAC%20-%20P2%20-%20GLOBAL%20-%20GRANT%20-%20High-Risk%20Users%20-%20Risk%20Remediation/IAC%20-%20P2%20-%20GLOBAL%20-%20GRANT%20-%20High-Risk%20Users%20-%20Risk%20Remediation.png)
+![IAC - P2 - GLOBAL - GRANT - High-Risk Users - Risk Remediation](Documentation/IAC%20-%20P2%20-%20GLOBAL%20-%20GRANT%20-%20High-Risk%20Users%20-%20Risk%20Remediation/IAC%20-%20P2%20-%20GLOBAL%20-%20GRANT%20-%20High-Risk%20Users%20-%20Risk%20Remediation.png)
 
 
 ---
@@ -1255,8 +1291,8 @@ Companion to the standard high-risk risk-remediation policy. Targets users enrol
 
 | Component | Value |
 |-----------|-------|
-| **Users** | EAM group only (`8d0564e5-ab28-4283-9a94-9883c581adde`) |
-| **Excluded Groups** | Break-glass (`5628ad67`), Additional exclusion (`b63c3682`) |
+| **Users** | Include: SG-Entra-AUG-MFA-AuthEAM (`8d0564e5-ab28-4283-9a94-9883c581adde`) |
+| **Excluded Groups** | SG-Entra-AUG-CAP-BreakglassAccounts (`5628ad67`) |
 | **Cloud Apps** | All resources |
 | **Conditions** | User risk: High, Client apps: all |
 | **Grant Controls** | ✅ Require MFA AND 🔑 Risk remediation |
@@ -1269,7 +1305,7 @@ Companion to the standard high-risk risk-remediation policy. Targets users enrol
 - [INFO]  Break-glass group excluded ✓
 - [INFO]  Companion to IAC - P2 - GLOBAL - GRANT - High-Risk Users - Risk Remediation
 
-![IAC - P2 - GLOBAL - GRANT - EAM - High-Risk Users - Risk Remediation](IAC%20-%20P2%20-%20GLOBAL%20-%20GRANT%20-%20EAM%20-%20High-Risk%20Users%20-%20Risk%20Remediation/IAC%20-%20P2%20-%20GLOBAL%20-%20GRANT%20-%20EAM%20-%20High-Risk%20Users%20-%20Risk%20Remediation.png)
+![IAC - P2 - GLOBAL - GRANT - EAM - High-Risk Users - Risk Remediation](Documentation/IAC%20-%20P2%20-%20GLOBAL%20-%20GRANT%20-%20EAM%20-%20High-Risk%20Users%20-%20Risk%20Remediation/IAC%20-%20P2%20-%20GLOBAL%20-%20GRANT%20-%20EAM%20-%20High-Risk%20Users%20-%20Risk%20Remediation.png)
 
 
 ---
@@ -1277,8 +1313,7 @@ Companion to the standard high-risk risk-remediation policy. Targets users enrol
 
 # IAC - P2 - GLOBAL - GRANT - Medium-Risk Users - Risk Remediation
 
-**State:** Enabled  
-**Policy ID:** `7475b373-0544-4ee8-8827-cff35009136d`  
+**State:** Report-only  
 **License Requirement:** Entra ID P2
 
 ## Intent
@@ -1293,10 +1328,10 @@ Requires authentication strength and risk remediation for users flagged as mediu
 | Component | Value |
 |-----------|-------|
 | **Users** | All users |
-| **Excluded Groups** | Break-glass (`5628ad67`), EAM users (`b63c3682`) |
+| **Excluded Groups** | SG-Entra-AUG-CAP-BreakglassAccounts (`5628ad67`), all external guest types |
 | **Cloud Apps** | All resources |
 | **Conditions** | User risk: Medium, Client apps: all |
-| **Grant Controls** | 🛡️ Auth strength: Modern MFA + TAP AND 🔑 Risk remediation |
+| **Grant Controls** | 🔐 Authentication strength (Modern MFA + TAP) AND 🔑 Risk remediation |
 | **Grant Operator** | AND |
 | **Session Controls** | — |
 
@@ -1306,9 +1341,7 @@ Requires authentication strength and risk remediation for users flagged as mediu
 - [MEDIUM]  All guest/external user type(s) excluded
 - [INFO]  EAM users excluded — companion EAM policy required for this user population
 
-![IAC - P2 - GLOBAL - GRANT - Medium-Risk Users - Risk Remediation](IAC%20-%20P2%20-%20GLOBAL%20-%20GRANT%20-%20Medium-Risk%20Users%20-%20Risk%20Remediation/IAC%20-%20P2%20-%20GLOBAL%20-%20GRANT%20-%20Medium-Risk%20Users%20-%20Risk%20Remediation.png)
+![IAC - P2 - GLOBAL - GRANT - Medium-Risk Users - Risk Remediation](Documentation/IAC%20-%20P2%20-%20GLOBAL%20-%20GRANT%20-%20Medium-Risk%20Users%20-%20Risk%20Remediation/IAC%20-%20P2%20-%20GLOBAL%20-%20GRANT%20-%20Medium-Risk%20Users%20-%20Risk%20Remediation.png)
 
 
 ---
-
-
