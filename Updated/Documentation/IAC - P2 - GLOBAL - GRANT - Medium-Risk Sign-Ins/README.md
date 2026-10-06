@@ -5,7 +5,7 @@
 
 ## Intent
 
-Requires MFA for sign-ins assessed as medium-risk by Entra Identity Protection. Medium-risk indicators include unfamiliar sign-in properties and atypical travel. Softer response than high-risk — MFA without forced password change. Requires Entra ID P2.
+Requires MFA for sign-ins assessed as medium-risk by Entra Identity Protection. Medium-risk indicators include unfamiliar sign-in properties and atypical travel. Softer response than high-risk - MFA without forced password change. Requires Entra ID P2.
 
 ## Policy Configuration
 
@@ -15,7 +15,7 @@ Requires MFA for sign-ins assessed as medium-risk by Entra Identity Protection. 
 | **Cloud Apps** | All cloud apps |
 | **Conditions** | Sign-in risk: medium, Client apps: all |
 | **Grant Controls** | ✅ Require MFA |
-| **Session Controls** | — |
+| **Session Controls** | - |
 
 ## Audit Findings
 

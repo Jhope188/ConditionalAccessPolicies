@@ -15,7 +15,7 @@ Requires MFA to access the Inforcer application specifically. Ensures that the m
 | **Cloud Apps** | Inforcer Integration |
 | **Conditions** | Locations: All locations, Client apps: all |
 | **Grant Controls** | ✅ Require MFA |
-| **Session Controls** | — |
+| **Session Controls** | - |
 
 ## Audit Findings
 

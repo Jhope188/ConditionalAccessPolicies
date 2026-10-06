@@ -5,14 +5,14 @@
 
 ## Intent
 
-Requires reauthentication (authentication context c1 — PIM-ReAuthentication) when accessing Privileged Identity Management to activate roles. Ensures that PIM role activations always trigger a fresh authentication challenge, preventing session reuse for privilege escalation.
+Requires reauthentication (authentication context c1 - PIM-ReAuthentication) when accessing Privileged Identity Management to activate roles. Ensures that PIM role activations always trigger a fresh authentication challenge, preventing session reuse for privilege escalation.
 
 ## Policy Configuration
 
 | Component | Value |
 |-----------|-------|
 | **Users** | All users (1 exclusions) |
-| **Cloud Apps** | — |
+| **Cloud Apps** | - |
 | **Conditions** | Client apps: all |
 | **Grant Controls** | 🛡️ Auth strength: Modern MFA + TAP |
 | **Session Controls** | Sign-in frequency: null null |

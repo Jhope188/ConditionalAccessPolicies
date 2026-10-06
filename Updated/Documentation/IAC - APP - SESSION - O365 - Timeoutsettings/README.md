@@ -14,8 +14,8 @@ Applies session timeout controls to Office 365 applications. Configures sign-in 
 | **Users** | All users (1 exclusions) |
 | **Cloud Apps** | Office365 |
 | **Conditions** | Platforms: all (exclude: android, iOS, macOS, linux), Client apps: browser, Device filter: device.isCompliant -eq True -and device.trustType -eq "ServerAD" |
-| **Grant Controls** | — |
-| **Session Controls** | — |
+| **Grant Controls** | - |
+| **Session Controls** | - |
 
 ## Audit Findings
 

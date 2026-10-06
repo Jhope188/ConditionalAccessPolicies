@@ -15,10 +15,10 @@ Requires MFA for all guest users including ad hoc guests without a formal home t
 | **Cloud Apps** | All cloud apps |
 | **Conditions** | Client apps: all |
 | **Grant Controls** | ✅ Require MFA |
-| **Session Controls** | — |
+| **Session Controls** | - |
 
 ## Audit Findings
 
 - ID: e0fabad3-bd0f-42e4-a901-51ef7ab8889c
 - [INFO]  Policy is in report-only mode
-- [HIGH]  Guest users required to satisfy MFA — may need Cross-Tenant Access Settings
+- [HIGH]  Guest users required to satisfy MFA - may need Cross-Tenant Access Settings

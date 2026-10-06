@@ -5,7 +5,7 @@
 
 ## Intent
 
-Blocks sign-in for AI agent identities that are not in the approved/trusted agent set. Implements a default-deny posture for agent workload identities — only explicitly approved agents can authenticate.
+Blocks sign-in for AI agent identities that are not in the approved/trusted agent set. Implements a default-deny posture for agent workload identities - only explicitly approved agents can authenticate.
 
 ## Policy Configuration
 
@@ -15,7 +15,7 @@ Blocks sign-in for AI agent identities that are not in the approved/trusted agen
 | **Cloud Apps** | All cloud apps |
 | **Conditions** | Client apps: all |
 | **Grant Controls** | 🚫 Block access |
-| **Session Controls** | — |
+| **Session Controls** | - |
 
 ## Audit Findings
 

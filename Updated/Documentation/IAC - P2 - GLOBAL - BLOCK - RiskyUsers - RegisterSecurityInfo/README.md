@@ -15,7 +15,7 @@ Blocks high-risk and medium-risk users from registering new security information
 | **Cloud Apps** | User actions: urn:user:registersecurityinfo |
 | **Conditions** | User risk: high, medium, Client apps: all |
 | **Grant Controls** | 🚫 Block access |
-| **Session Controls** | — |
+| **Session Controls** | - |
 
 ## Audit Findings
 

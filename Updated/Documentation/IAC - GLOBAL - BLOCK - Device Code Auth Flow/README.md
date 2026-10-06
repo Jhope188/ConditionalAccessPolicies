@@ -15,10 +15,10 @@ Blocks the OAuth 2.0 device code flow across all users and apps. Device code phi
 | **Cloud Apps** | All cloud apps |
 | **Conditions** | Client apps: all |
 | **Grant Controls** | 🚫 Block access |
-| **Session Controls** | — |
+| **Session Controls** | - |
 
 ## Audit Findings
 
 - ID: 8b42eda3-6917-4ab4-afb2-e32c37520f9b
-- [MEDIUM]  Broad policy with exclusions — review for gaps
+- [MEDIUM]  Broad policy with exclusions - review for gaps
 - [INFO]  Break-glass group excluded ✓

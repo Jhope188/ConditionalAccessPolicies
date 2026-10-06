@@ -5,7 +5,7 @@
 
 ## Intent
 
-Requires MFA for all users holding admin directory roles (scoped via ADM-Users-Dynamic). Admin accounts are the highest-value targets — this policy ensures every privileged action requires a second factor. Applies phishing-resistant authentication strength where configured.
+Requires MFA for all users holding admin directory roles (scoped via ADM-Users-Dynamic). Admin accounts are the highest-value targets - this policy ensures every privileged action requires a second factor. Applies phishing-resistant authentication strength where configured.
 
 ## Policy Configuration
 
@@ -15,7 +15,7 @@ Requires MFA for all users holding admin directory roles (scoped via ADM-Users-D
 | **Cloud Apps** | All cloud apps |
 | **Conditions** | Client apps: all |
 | **Grant Controls** | 🛡️ Auth strength: Modern MFA + TAP |
-| **Session Controls** | — |
+| **Session Controls** | - |
 
 ## Audit Findings
 

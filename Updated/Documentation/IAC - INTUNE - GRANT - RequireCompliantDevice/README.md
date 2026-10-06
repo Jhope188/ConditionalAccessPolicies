@@ -15,12 +15,12 @@ Requires devices to be marked as compliant in Microsoft Intune before accessing 
 | **Cloud Apps** | All cloud apps |
 | **Conditions** | Locations: All locations, Exclude locations: All trusted locations, Client apps: all |
 | **Grant Controls** | 📱 Require compliant device OR 💻 Require hybrid Azure AD joined |
-| **Session Controls** | — |
+| **Session Controls** | - |
 
 ## Audit Findings
 
 - ID: 660ab461-0de5-4b00-baea-ec7325280f60
-- [HIGH]  Grant controls use "OR" — weakest control is effective
+- [HIGH]  Grant controls use "OR" - weakest control is effective
 - [HIGH]  Device Registration Service bypasses location-based conditions and compliant/hybrid-joined device requirement
 - [MEDIUM]  Policy does not require MFA
 - [INFO]  Policy is in report-only mode

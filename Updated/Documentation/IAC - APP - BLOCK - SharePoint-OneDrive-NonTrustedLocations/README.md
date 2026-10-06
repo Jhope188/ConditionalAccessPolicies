@@ -15,7 +15,7 @@ Blocks access to SharePoint Online and OneDrive from network locations not liste
 | **Cloud Apps** | Office 365 SharePoint Online |
 | **Conditions** | Locations: All locations, Exclude locations: All trusted locations, Client apps: all |
 | **Grant Controls** | 🚫 Block access |
-| **Session Controls** | — |
+| **Session Controls** | - |
 
 ## Audit Findings
 

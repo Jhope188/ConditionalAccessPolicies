@@ -7,7 +7,7 @@
 
 Zero Trust CA policy that blocks all app access from devices that are not Intune-compliant, excluding trusted locations. Enforces device compliance as a condition for all resource access in a Zero Trust Architecture posture.
 
-> ⚠️ **Incident Response Use Disclaimer:** This policy, and its companion (IAC- ZTCA - GLOBAL - BLOCK - AllApps -Exclude CA-Global), are designed and maintained as **incident response tooling**, not as standing production controls. The intent is to give responders a pre-built "kill switch" that, in the event of a major breach, can be enabled to immediately collapse the organization's access surface down to one trusted account operating from one trusted location — paired with an immediate credential/session revocation script to cut off attacker access as fast as possible. These policies must be carefully considered before enabling in a live production environment, and should be tested and rehearsed ahead of time. Building or tuning a policy like this in the middle of an active incident is not the goal — it should already exist, already be understood, and already be ready to flip on.
+> ⚠️ **Incident Response Use Disclaimer:** This policy, and its companion (IAC- ZTCA - GLOBAL - BLOCK - AllApps -Exclude CA-Global), are designed and maintained as **incident response tooling**, not as standing production controls. The intent is to give responders a pre-built "kill switch" that, in the event of a major breach, can be enabled to immediately collapse the organization's access surface down to one trusted account operating from one trusted location - paired with an immediate credential/session revocation script to cut off attacker access as fast as possible. These policies must be carefully considered before enabling in a live production environment, and should be tested and rehearsed ahead of time. Building or tuning a policy like this in the middle of an active incident is not the goal - it should already exist, already be understood, and already be ready to flip on.
 
 ## Policy Configuration
 
@@ -17,7 +17,7 @@ Zero Trust CA policy that blocks all app access from devices that are not Intune
 | **Cloud Apps** | All cloud apps |
 | **Conditions** | Locations: All locations, Exclude locations: All trusted locations, Client apps: all, Device filter: device.isCompliant -eq True -or device.trustType -eq "ServerAD" -or device.trustType -eq "Workplace" |
 | **Grant Controls** | 🚫 Block access |
-| **Session Controls** | — |
+| **Session Controls** | - |
 
 ## Audit Findings
 

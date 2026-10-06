@@ -14,8 +14,8 @@ Cryptographically binds access tokens to the specific Windows device that authen
 | **Users** | All users (2 exclusions) |
 | **Cloud Apps** | Office 365 Exchange Online, Office 365 SharePoint Online, Windows 365, Azure Virtual Desktop, Microsoft Teams Services |
 | **Conditions** | Platforms: windows, Client apps: mobileAppsAndDesktopClients, Device filter: device.systemLabels -contains "CloudPC" -and device.trustType -eq "AzureAD" |
-| **Grant Controls** | — |
-| **Session Controls** | — |
+| **Grant Controls** | - |
+| **Session Controls** | - |
 
 ## Audit Findings
 

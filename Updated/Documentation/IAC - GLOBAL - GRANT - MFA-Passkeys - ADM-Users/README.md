@@ -5,7 +5,7 @@
 
 ## Intent
 
-Requires admin-role users to authenticate using a passkey (FIDO2 or device-bound passkey) specifically. Elevates the authentication requirement for privileged accounts beyond standard MFA — passkeys are phishing-resistant by design and cannot be intercepted or replayed.
+Requires admin-role users to authenticate using a passkey (FIDO2 or device-bound passkey) specifically. Elevates the authentication requirement for privileged accounts beyond standard MFA - passkeys are phishing-resistant by design and cannot be intercepted or replayed.
 
 ## Policy Configuration
 
@@ -15,7 +15,7 @@ Requires admin-role users to authenticate using a passkey (FIDO2 or device-bound
 | **Cloud Apps** | All cloud apps |
 | **Conditions** | Client apps: all |
 | **Grant Controls** | 🛡️ Auth strength: Modern MFA + TAP |
-| **Session Controls** | — |
+| **Session Controls** | - |
 
 ## Audit Findings
 

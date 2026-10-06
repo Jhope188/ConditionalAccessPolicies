@@ -15,10 +15,10 @@ Requires MFA for external B2B collaboration users (formal partner/guest accounts
 | **Cloud Apps** | All cloud apps |
 | **Conditions** | Client apps: all |
 | **Grant Controls** | 🛡️ Auth strength: Modern MFA + TAP |
-| **Session Controls** | — |
+| **Session Controls** | - |
 
 ## Audit Findings
 
 - ID: f25f94e0-98b6-41be-b9d6-68cb781004a4
 - [INFO]  Policy is in report-only mode
-- [MEDIUM]  Guest users required to satisfy Authentication strength: Modern MFA + TAP — may need Cross-Tenant Access Settings
+- [MEDIUM]  Guest users required to satisfy Authentication strength: Modern MFA + TAP - may need Cross-Tenant Access Settings

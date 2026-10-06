@@ -13,7 +13,7 @@ Companion to `IAC - P2 - GLOBAL - GRANT - High-Risk Users - Risk Remediation`. T
 
 EAM users authenticate via a third-party MFA provider (e.g. Duo, Okta). Because custom auth strength objects do not accept EAM claims, a separate policy with the built-in `mfa` control is required to avoid blocking this population while still enforcing the same risk remediation requirement.
 
-> 📖 [Require password change for high-risk users — Microsoft Learn](https://learn.microsoft.com/en-us/entra/identity/conditional-access/policy-risk-based-user)  
+> 📖 [Require password change for high-risk users - Microsoft Learn](https://learn.microsoft.com/en-us/entra/identity/conditional-access/policy-risk-based-user)  
 > 📖 [Risk-based Conditional Access policies best practices](https://learn.microsoft.com/en-us/entra/id-protection/howto-identity-protection-configure-risk-policies)
 
 ---
@@ -42,7 +42,7 @@ Custom authentication strength objects evaluate specific credential combinations
 
 ### Why AND + Every Time?
 
-- **AND operator**: Both MFA AND risk remediation must be satisfied — the password must be changed, not just MFA completed
+- **AND operator**: Both MFA AND risk remediation must be satisfied - the password must be changed, not just MFA completed
 - **Every time SIF**: Forces full re-authentication on every session until Identity Protection dismisses the risk
 - **Risk remediation** (`riskRemediation`): Requires secure password reset via SSPR, which closes the Identity Protection risk flag
 
@@ -52,7 +52,7 @@ Custom authentication strength objects evaluate specific credential combinations
 
 | Policy | Purpose |
 |--------|---------|
-| [IAC - P2 - GLOBAL - GRANT - High-Risk Users - Risk Remediation](../IAC%20-%20P2%20-%20GLOBAL%20-%20GRANT%20-%20High-Risk%20Users%20-%20Risk%20Remediation/README.md) | Standard population — uses auth strength (Modern MFA + TAP) |
+| [IAC - P2 - GLOBAL - GRANT - High-Risk Users - Risk Remediation](../IAC%20-%20P2%20-%20GLOBAL%20-%20GRANT%20-%20High-Risk%20Users%20-%20Risk%20Remediation/README.md) | Standard population - uses auth strength (Modern MFA + TAP) |
 
 ---
 
@@ -60,7 +60,7 @@ Custom authentication strength objects evaluate specific credential combinations
 
 - Requires **Entra ID P2** and **Identity Protection** to be enabled
 - Requires **SSPR** to be configured
-- The EAM inclusion group (`8d0564e5`) must exactly match the group excluded from the companion standard policy — any user in both groups would be double-covered; any user in neither would have no risk remediation policy
+- The EAM inclusion group (`8d0564e5`) must exactly match the group excluded from the companion standard policy - any user in both groups would be double-covered; any user in neither would have no risk remediation policy
 - Enable in **report-only first**, validate with Identity Protection risky users report
 - Break-glass accounts must be excluded
 

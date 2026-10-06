@@ -21,16 +21,16 @@ It runs at sign-in time and determines whether a token is issued, restricted, or
 **The Jon Hope Explanation** 
 
 `Conditional Access` is the modern day cloud identity and workload firewall.
-In the modern cloud, `identity` is the new server—it’s the control plane every access request must pass through.
+In the modern cloud, `identity` is the new server-it’s the control plane every access request must pass through.
 
 Just like a firewall:
-- It doesn’t protect the server — it protects access
+- It doesn’t protect the server - it protects access
 - It evaluates every connection attempt
 - Rules are context-aware, not static
 
 **Im currently expanding this to include Inforcer**
 
-Inforcer is the policy engine—GPO v2 for the cloud era.
+Inforcer is the policy engine-GPO v2 for the cloud era.
 It operationalizes Conditional Access by defining standards once and enforcing them consistently at scale across multiple tenants, turning security intent into repeatable, governable outcomes
 
 > **Important CA Differences and notes to call out**
@@ -182,10 +182,10 @@ ACME - [Scope] - [Control Type] - [Target] - [Descriptor/Notes]
 
 ## 4. Best Practices
 
-1. **Keep it concise but descriptive** — each segment should quickly tell an admin *what the policy does* without opening it.
-2. **Hyphenate multi-word segments** — improves sorting and readability (`NonTrustedLocations` instead of `Non Trusted Locations`).
-3. **Always include exclusion descriptor** — never leave exceptions hidden only in the policy config.
-4. **Use consistent casing** — TitleCase or CamelCase for clarity.
+1. **Keep it concise but descriptive** - each segment should quickly tell an admin *what the policy does* without opening it.
+2. **Hyphenate multi-word segments** - improves sorting and readability (`NonTrustedLocations` instead of `Non Trusted Locations`).
+3. **Always include exclusion descriptor** - never leave exceptions hidden only in the policy config.
+4. **Use consistent casing** - TitleCase or CamelCase for clarity.
 
 ---
 
@@ -544,7 +544,7 @@ This document outlines clear, consistent, and scalable naming conventions tailor
 
 | **Group Name**              | **Description / Purpose**                                                                                                   | **Usage in CA Policies**                                                                                      | **Type**           | **Membership**                      |
 | --------------------------- | --------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------- | ------------------ | ----------------------------------- |
-| **CA-DeviceExclusions**     | Devices excluded from Conditional Access evaluations — typically service devices, shared kiosks, or troubleshooting devices. | Used as an *Exclude group* in device compliance or registration policies (e.g., INTUNE or GLOBAL GRANT).      | Conditional Access | **Assigned or Dynamic (deviceId)**  |
+| **CA-DeviceExclusions**     | Devices excluded from Conditional Access evaluations - typically service devices, shared kiosks, or troubleshooting devices. | Used as an *Exclude group* in device compliance or registration policies (e.g., INTUNE or GLOBAL GRANT).      | Conditional Access | **Assigned or Dynamic (deviceId)**  |
 | **CA-GlobalExclusions**     | Universal exclusion group for emergency break-glass or exception accounts.                                                   | Excluded from **all** CA policies to prevent accidental lockout of admin access.                              | Conditional Access | **Assigned (manual)**               |
 | **CA-GuestExclusions**      | Guest or external users exempt from specific policies (e.g., certain apps, trusted partners).                                | Excluded in guest-blocking or MFA-required policies for trusted external collaborators.                       | Conditional Access | **Assigned**                        |
 | **CA-ServiceAccounts**      | Service or automation accounts that cannot perform MFA or Conditional Access prompts.                                        | Excluded in policies enforcing MFA or interactive sign-in requirements.                                       | Conditional Access | **Assigned (manually approved)**    |
@@ -770,7 +770,7 @@ NOTE: Tenant Administration > Assignment Filter
 
 - **Group Name:** `ACME-AVD-Host-Dynamic`
 - **Scope:** Internal Operational Group (`ACME`)
-- **Technology/Service:** Azure Virtual Desktop (AVD – RDSH / Windows 10 & 11 Multi-session)
+- **Technology/Service:** Azure Virtual Desktop (AVD - RDSH / Windows 10 & 11 Multi-session)
 - **Target:** Devices
 - **Descriptor:** Dynamic
 - **Purpose:** Dynamic membership group that automatically includes all Azure Virtual Desktop RDSH session host devices (Windows 10/11 multi-session) registered in Microsoft Entra ID.

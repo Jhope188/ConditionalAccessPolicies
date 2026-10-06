@@ -5,7 +5,7 @@
 
 ## Intent
 
-Blocks the authentication transfer flow, which allows session tokens to be moved between devices. This flow is a vector for token theft and lateral movement. Legitimate use cases are minimal — block broadly.
+Blocks the authentication transfer flow, which allows session tokens to be moved between devices. This flow is a vector for token theft and lateral movement. Legitimate use cases are minimal - block broadly.
 
 ## Policy Configuration
 
@@ -15,7 +15,7 @@ Blocks the authentication transfer flow, which allows session tokens to be moved
 | **Cloud Apps** | All cloud apps |
 | **Conditions** | Client apps: all |
 | **Grant Controls** | 🚫 Block access |
-| **Session Controls** | — |
+| **Session Controls** | - |
 
 ## Audit Findings
 

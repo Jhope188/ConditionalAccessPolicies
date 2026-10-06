@@ -15,7 +15,7 @@ Blocks sign-in for AI agent identities assessed as high-risk by Entra Identity P
 | **Cloud Apps** | All cloud apps |
 | **Conditions** | Client apps: all |
 | **Grant Controls** | 🚫 Block access |
-| **Session Controls** | — |
+| **Session Controls** | - |
 
 ## Audit Findings
 
